@@ -1,0 +1,5 @@
+DesignName, riscvCore
+libraryName, .lib location
+lefName, .lef location
+rtlFile, .v location
+technology, 45
