@@ -6,5 +6,7 @@
 ### we are using doit automation flow you can get more detail about doit flow in this location "https://pydoit.org/" 
 
 ### commands to run ASIC flow
-#### doit list 
+#### Terminal> doit list 
 ##### this will list the tasks that are available 
+
+
