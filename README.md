@@ -51,25 +51,29 @@
 <h3> we are using doit automation flow you can get more detail about doit flow in this location "https://pydoit.org/"  </h3>
 
 <!-- getting-started -->
-##getting-started
+#getting-started
+<h3> getting started </h3>
 
 <!-- prerequisites -->
-##prerequisites
+#prerequisites
+<h3> requirements </h3>
 
 <!-- installation -->
-##installation
+#installation
+<h3> installation steps </h3>
 
 <!-- usage -->
-##usage
+#usage
+<h3> usage </h3>
 
 <!-- contributing -->
-##contributing
+#contributing
+<h3> contributing </h3>
 
 <!-- license -->
-##license
+#license
+<h3> license </h3>
 
 <!-- contact -->
-##contact
-
-<!-- contact -->
-##contact
+#contact
+<h3> contacts </h3>
