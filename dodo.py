@@ -30,7 +30,21 @@ def task_Methadology():
 def task_generateSetup():
     def python_generateSetup():
         print ("loading the csvFile :", csvFile , "converting to setup.tcl please wait")
-        time.sleep(5)
+        df = pd.read_csv(csvFile)
+        fmt = "set "
+        designs = df.columns[1:].values
+        print(designs," is the designs ")
+        required_col=df[['DesignName',designName]]
+        print("req col \n",required_col)
+        final_df=required_col
+        print(final_df.values)
+        for i in required_col:
+            fmt+=" %s "
+        np.savetxt(r'setup.tcl', final_df.values, fmt=fmt)
+        line1 = "set DesignName \""+designName+"\""
+        file1 = open('setup.tcl', 'a+')
+        file1.write(line1)
+        file1.close()
 
         
     return {
