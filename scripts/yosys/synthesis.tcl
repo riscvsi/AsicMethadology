@@ -1,9 +1,18 @@
+yosys -import
+
+source setup.tcl 
+set dirName "synthesis"
+if {![file exists $designName]} {
+  file mkdir "synthesis"
+  puts "Creating directory synthesis"
+}
+
 
 # read design 
-read_verilog counter/counter.v
+read_verilog $RTLFile
 
 # elaborate design hierarchy
-hierarchy -check -top first_counterNew 
+hierarchy -check -top $designName 
 
 # the high-level stuff
 opt; fsm; opt;
@@ -12,13 +21,13 @@ opt; fsm; opt;
 techmap; opt
 
 # cleanup
-synth -top first_counterNew 
+synth -top $designName 
 
-dfflibmap -liberty counter/sky130_fd_sc_hd__tt_025C_1v80.lib
+dfflibmap -liberty $libFiles
 
-abc -liberty counter/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty $libFiles
 
 
 # write synthesized design
-write_verilog counter.synth.v
+write_verilog ${dirName}/${designName}.synth.v
 

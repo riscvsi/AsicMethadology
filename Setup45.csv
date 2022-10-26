@@ -1,5 +1,10 @@
-DesignName, riscvCore
-libraryName, .lib location
-lefName, .lef location
-rtlFile, .v location
-technology, 45
+blockName,first_counterNew
+RTLPath,./
+RTLFile,counter/counter.v
+designName,first_counterNew
+sdcFile,./firstCounter.sdc
+effort,medium
+libFiles,./counter/sky130_fd_sc_hd__tt_025C_1v80.lib
+libSearchPath,./
+lefFiles,./
+lefSearchPath,./

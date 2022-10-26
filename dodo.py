@@ -1,10 +1,10 @@
 import time
 from doit.action import CmdAction
 csvFile = "Setup45.csv"
-designName = "riscvCore"
+designName = "first_counterNew"
 
 synthTool = "yosys"
-synthMethadology = "/home/rcg/work/scripts/tcl/MethadologyScripts/"
+synthMethadology = "./scripts/"
 
 
 ## this is to show the section that is getting executed
@@ -28,27 +28,25 @@ def task_Methadology():
 
 ### this section we generate the setup.tcl file for all the runs
 def task_generateSetup():
+    import pandas as pd
+    import numpy as np
     def python_generateSetup():
         print ("loading the csvFile :", csvFile , "converting to setup.tcl please wait")
         df = pd.read_csv(csvFile)
         fmt = "set "
         designs = df.columns[1:].values
         print(designs," is the designs ")
-        required_col=df[['DesignName',designName]]
+        required_col=df[['blockName',designName]]
         print("req col \n",required_col)
         final_df=required_col
         print(final_df.values)
         for i in required_col:
             fmt+=" %s "
         np.savetxt(r'setup.tcl', final_df.values, fmt=fmt)
-        line1 = "set DesignName \""+designName+"\""
-        file1 = open('setup.tcl', 'a+')
-        file1.write(line1)
-        file1.close()
 
         
     return {
-        'actions': [python_generateSetup,"touch setup.tcl"],
+        'actions': [python_generateSetup],
         'targets': ["setup.tcl"],
         'title': show_cmd,
         'verbosity': 2,
@@ -65,7 +63,7 @@ def task_synthesis():
     depFiles.append("setup.tcl")
     #"setup.tcl" , " temp.v "
     if synthTool == "yosys":
-        invokeTool = synthTool +" -s " + synthMethadology + "/" + synthTool + "/synthesis.tcl"
+        invokeTool = synthTool +" -c " + synthMethadology + "/" + synthTool + "/synthesis.tcl"
     if synthTool == "genus":
         invokeTool = synthTool + " -f "+ synthMethadology + "/" + synthTool + "/synthesis.tcl"
 
@@ -74,12 +72,10 @@ def task_synthesis():
 
     def python_setupSynthesis():
         print("here we need to read the setup.tcl file and check if the files are available in the said location")
-        time.sleep(5)
         print("if the files are available start the synthesis run")
     
     def python_postSynthesis():
         print ("post synthesis get the data and make all the checks")
-        time.sleep(5)
 
         
     return {
