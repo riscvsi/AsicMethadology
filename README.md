@@ -58,16 +58,22 @@
 
 
 <h4> 1. clone the git repo to your local path </h4>
-<p style="font-family:courier;"> git clone https://github.com/riscvsi/AsicMethadology.git </p>
-<p style="font-family:courier;"> give your username : </p>
-<p style="font-family:courier;"> give your password : </p>
-<p> if you get "remote: Support for password authentication was removed on August 13, 2021." this message you will have to create a token in github to clone</p>
+```bash
+git clone https://github.com/riscvsi/AsicMethadology.git
+#give your username :
+#give your password : 
+```
+<p>if you get "remote: Support for password authentication was removed on August 13, 2021." this message you will have to create a token in github to clone </p>
 <p> steps to create token are in this link "https://howchoo.com/github/github-generate-personal-access-tokens" </p>
 <p>pn Note: create classic tokens and not fine grained tokens give full permissions while creating the token in the checkbox fields all to be ticked</p>
 <p style="font-family:courier;"> give your password: "your PAT (personal access token) " </p>
 <br>
-<p style="font-family:courier;">cd AsicMethadology</p>
+```bash
+cd AsicMethadology
+```
 <p> follow the doit flow see the usage section <li><a href="#usage">Usage</a></li></p>
+
+
 
 <!-- prerequisites -->
 ## prerequisites
