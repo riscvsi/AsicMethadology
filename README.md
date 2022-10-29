@@ -53,8 +53,12 @@
 <!-- getting-started -->
 ## getting-started
 <h3> getting started </h3>
+
+![screenshot](https://github.com/riscvsi/storeImmage/blob/main/clone-github-repo.gif?raw=true)
+
+
 <h4> 1. clone the git repo to your local path </h4>
-<p style="font-family:courier;"> `git clone https://github.com/riscvsi/AsicMethadology.git `</p>
+<p style="font-family:courier;"> git clone https://github.com/riscvsi/AsicMethadology.git </p>
 <p style="font-family:courier;"> give your username : </p>
 <p style="font-family:courier;"> give your password : </p>
 <p> if you get "remote: Support for password authentication was removed on August 13, 2021." this message you will have to create a token in github to clone</p>
@@ -68,6 +72,9 @@
 <!-- prerequisites -->
 ## prerequisites
 <h3> requirements </h3>
+
+![screenshot](https://github.com/riscvsi/storeImmage/blob/main/check-for-doit.gif?raw=true)
+
 <h4> check if the following is installed in the system </h4>
 <h4> 1. doit </h4>
 <h4>doit python task automation is what we use for automating our work and this is the main frame work that we use to develop the automation </h4>
@@ -93,6 +100,9 @@
 <!-- usage -->
 ## usage
 <h3> usage </h3>
+
+![screenshot](https://github.com/riscvsi/storeImmage/blob/main/doit-execute-part1.gif?raw=true)
+
 <h4> using the doit framework to work on the flow</h4>
 <br>
 <p style="font-family:courier;"> doit list </p>
@@ -108,16 +118,25 @@
 <p> this step will run synthesis for the block that is defined </p>
 <br> 
 <br>
+
+![screenshot](https://github.com/riscvsi/storeImmage/blob/main/doit-execute-part2.gif?raw=true)
+
 <p> modifying the design and inputs </p> 
 <p> open the dodo.py this is the main file that doit executes in the first section you can find the name of the design and the csv file that is being read </p> 
 <p> open the csv file that is given in the dodo.py file using libreoffice or generic </p>
-<p style="font-family:courier;"> generic Setup45.csv </p>
+<p style="font-family:courier;"> libreoffice Setup45.csv </p>
 <p> this will show you the design and the corresponding inputs that is required </p> 
 <p> add new column in the the csv file according to your requirement give a new design name</p> 
 <p> modify the dodo.py file to pick the correct design name </p>
 <p> modify the dodo.py file and give the tool to use default is yosys you can use "genus" or "dc" scripts will be picked up based on the tool given here </p>
+
+![screenshot](https://github.com/riscvsi/storeImmage/blob/main/doit-execute-part3.gif?raw=true)
+
 <p style="font-family:courier;"> doit synthesis </p>
 <p> this will trigger the flow to pick up the user inputs </p>
+
+<p> the methadology scripts are present in the scripts directory and are explained in the file itself you can edit the methadology based on your requirement</p>
+![screenshot](https://github.com/riscvsi/storeImmage/blob/main/doit-execute-part4.gif?raw=true)
 
 <!-- contributing -->
 ## contributing
