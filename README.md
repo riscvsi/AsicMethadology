@@ -109,10 +109,17 @@ git --version
 ## installation
 <h3> installation steps </h3>
 <h4> How to install doit </h4>
-<p style="font-family:courier;">pip install doit</p>
+
+```bash
+pip install doit
+```
+
 <br>
-<h4> How to install doit </h4>
-<p style="font-family:courier;">sudo apt install git</p>
+<h4> How to install git </h4>
+
+```bash
+sudo apt install git
+```
 
 
 <!-- usage -->
@@ -162,6 +169,47 @@ git --version
 <h3> contributing </h3>
 
 <p> in this section we will check how students can contribute to the project </p>
+
+<p> remote: files stored in main github</p>
+<p> main: this is the name of the main production version of files that are in github</p>
+<p> local: files that are stored in your location (your computer)</p>
+
+```bash
+git branch -a # this command will show all the branches available in remote
+git branch # this command will show all the local branches
+# create a new branch to add your individual contacts in README.md file name of the branch is "yourNameAddContact"
+git branch rcgAddContact main # this will create a new branch in your local area (say directory)
+git switch rcgAddContact
+git branch # observe the "*" right next to your branch that you created
+git push --set-upstream origin rcgAddContacg # this will create a branch in github project remote
+# now you are in your branch make changes to README.md file that is present in the directory and add your name and mail id
+git add README.md # as this is the only file you modified you will only stage this one single file rest of them are untouched
+# if you have modified any other file you will add git add FileName 
+# use git status to check what files are modified
+git commit -m "add my contact name and mail ID :Author rcg" # do not forget to add your name as author
+git push origin # this will push the changes to github and will retain the branch in your local if you need to make any other changes
+git push origin --delete rcgAddContact # this will push the changes to github and will remove the branch if all your changes are done
+# its always good to delte the branch and recreate the same branch again when you are working on a different problem.
+git switch main # now you switch to your main branch all changes are done in your branch open README.md and see if your changes are present
+git switch rcgAddContact # now you switch to your local branch all changes done in your branch should be available here.
+
+### now to check if your changes are merged to main or not
+git switch main ; # switch to the main branch
+git pull ; # pull the contents of the main branch to your local area
+git diff main rcgAddContact # check for the changes in main and your area and whether the changes are merged or not
+# not all the time your changes can be merged to main. you will have to recreate the branch and make the changes again 
+# in this case lets say 4 people added their contacts in 4 different branches git will not be able to merge only the 1st change will be merged rest of the changes will not be mergeble. 
+
+
+### how to merge the branch to main (dont try these steps)
+git pull origin main 
+git checkout main
+git merge origin/rcgAddContact
+git push -u origin main
+
+```
+
+
 
 <!-- license -->
 ## license
