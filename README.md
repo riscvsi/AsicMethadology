@@ -56,7 +56,7 @@
 
 ![screenshot](https://github.com/riscvsi/storeImmage/blob/main/clone-github-repo.gif?raw=true)
 
-
+```bash
 <h4> 1. clone the git repo to your local path </h4>
 ```bash
 git clone https://github.com/riscvsi/AsicMethadology.git
@@ -72,6 +72,7 @@ git clone https://github.com/riscvsi/AsicMethadology.git
 cd AsicMethadology
 ```
 <p> follow the doit flow see the usage section <li><a href="#usage">Usage</a></li></p>
+```
 
 
 
