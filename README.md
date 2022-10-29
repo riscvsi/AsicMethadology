@@ -136,6 +136,7 @@
 <p> this will trigger the flow to pick up the user inputs </p>
 
 <p> the methadology scripts are present in the scripts directory and are explained in the file itself you can edit the methadology based on your requirement</p>
+
 ![screenshot](https://github.com/riscvsi/storeImmage/blob/main/doit-execute-part4.gif?raw=true)
 
 <!-- contributing -->
