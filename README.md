@@ -54,7 +54,7 @@
 ## getting-started
 <h3> getting started </h3>
 <h4> 1. clone the git repo to your local path </h4>
-<p style="font-family:courier;"> git clone https://github.com/riscvsi/AsicMethadology.git </p>
+<p style="font-family:courier;"> `git clone https://github.com/riscvsi/AsicMethadology.git `</p>
 <p style="font-family:courier;"> give your username : </p>
 <p style="font-family:courier;"> give your password : </p>
 <p> if you get "remote: Support for password authentication was removed on August 13, 2021." this message you will have to create a token in github to clone</p>
