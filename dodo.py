@@ -6,6 +6,12 @@ designName = "first_counterNew"
 synthTool = "yosys"
 synthMethadology = "./scripts/"
 
+floorplanTool = "openroad"
+powerplanTool = "openroad"
+placementTool = "openroad"
+ctsTool = "openroad"
+routeTool = "openroad"
+chipFinishTool = "openroad"
 
 ## this is to show the section that is getting executed
 def show_cmd(task):
@@ -85,4 +91,40 @@ def task_synthesis():
         'verbosity': 2,
         'doc': "run synthesis",
     }
+
+
+
+def task_floorplan():
+    """perform floorplan on the design"""
+    ## read the csv file and determine what rows are needed for synthesis
+    
+    depFiles = []
+    ## we need synthesis output files
+    depFiles.append("setup.tcl")
+
+    #"setup.tcl" , " temp.v "
+    if floorplanTool == "openroad":
+        invokeTool = floorplanTool +"  " + synthMethadology + "/" + floorplanTool + "/floorplan.tcl -log openroad.log"
+    if floorplanTool == "innovus":
+        invokeTool = floorplanTool + " -f "+ synthMethadology + "/" + floorplanTool + "/floorplan.tcl"
+
+    def python_preFloorplan():
+        print(" place holder for prefloorplan checks using python")
+
+    def python_setupFloorplan():
+        print("here we need to read the setup.tcl file and check if the files are available in the said location")
+        print("if the files are available start the floorplan run")
+    
+    def python_postFloorplan():
+        print ("post floorplan get the data and make all the checks")
+
+        
+    return {
+        'actions': [python_preFloorplan , python_setupFloorplan, invokeTool, python_postFloorplan],
+        'file_dep': depFiles,
+        'title': show_cmd,
+        'verbosity': 2,
+        'doc': "run floorplan",
+    }
+
 
