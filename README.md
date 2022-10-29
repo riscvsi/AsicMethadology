@@ -56,8 +56,9 @@
 
 ![screenshot](https://github.com/riscvsi/storeImmage/blob/main/clone-github-repo.gif?raw=true)
 
-```bash
+
 <h4> 1. clone the git repo to your local path </h4>
+
 ```bash
 git clone https://github.com/riscvsi/AsicMethadology.git
 #give your username :
@@ -68,9 +69,11 @@ git clone https://github.com/riscvsi/AsicMethadology.git
 <p>pn Note: create classic tokens and not fine grained tokens give full permissions while creating the token in the checkbox fields all to be ticked</p>
 <p style="font-family:courier;"> give your password: "your PAT (personal access token) " </p>
 <br>
+
 ```bash
 cd AsicMethadology
 ```
+
 <p> follow the doit flow see the usage section <li><a href="#usage">Usage</a></li></p>
 ```
 
@@ -86,12 +89,20 @@ cd AsicMethadology
 <h4> 1. doit </h4>
 <h4>doit python task automation is what we use for automating our work and this is the main frame work that we use to develop the automation </h4>
 <h4>1. how to check if do it is installed </h4>
-<p style="font-family:courier;">doit --version</p>
+
+```bash
+doit --version
+```
+
 <p> this will show the version of do it that is installed in the system.</p>
 <p> If you get a error contact your system admin to install doit on your system see installation section to install doit </p>
 <br>
 <h4>2. check if git is installed in your system </h4>
-<p style="font-family:courier;">git --version</p>
+
+```bash
+git --version
+```
+
 <br>
 
 <!-- installation -->
