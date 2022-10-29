@@ -143,6 +143,8 @@
 ## contributing
 <h3> contributing </h3>
 
+<p> in this section we will check how students can contribute to the project </p>
+
 <!-- license -->
 ## license
 <h3> license </h3>
