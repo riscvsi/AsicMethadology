@@ -75,7 +75,7 @@ cd AsicMethadology
 ```
 
 <p> follow the doit flow see the usage section <li><a href="#usage">Usage</a></li></p>
-```
+
 
 
 
@@ -149,7 +149,11 @@ sudo apt install git
 <p> modifying the design and inputs </p> 
 <p> open the dodo.py this is the main file that doit executes in the first section you can find the name of the design and the csv file that is being read </p> 
 <p> open the csv file that is given in the dodo.py file using libreoffice or generic </p>
-<p style="font-family:courier;"> libreoffice Setup45.csv </p>
+
+'''bash
+libreoffice Setup45.csv
+'''
+
 <p> this will show you the design and the corresponding inputs that is required </p> 
 <p> add new column in the the csv file according to your requirement give a new design name</p> 
 <p> modify the dodo.py file to pick the correct design name </p>
