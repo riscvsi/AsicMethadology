@@ -105,7 +105,7 @@ def task_pnr():
     if pnrTool == "openroad":
         invokeTool = pnrTool +"  " + synthMethadology + "/" + pnrTool + "/floorplan.tcl -log openroad.log"
     if pnrTool == "innovus":
-        invokeTool = pnrTool + " -f "+ synthMethadology + "/" + pnrTool + "/floorplan.tcl"
+        invokeTool = "\\"+pnrTool + " -f "+ synthMethadology + "/" + pnrTool + "/floorplan.tcl"
 
     def python_preFloorplan():
         print(" place holder for prefloorplan checks using python")
