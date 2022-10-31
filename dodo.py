@@ -1,9 +1,11 @@
 import time
 from doit.action import CmdAction
-csvFile = "Setup45.csv"
-designName = "first_counterNew"
+from doit.tools import run_once
 
-synthTool = "yosys"
+csvFile = "Setup45.csv"
+designName = "leon"
+
+synthTool = "genus"
 synthMethadology = "./scripts/"
 
 floorplanTool = "openroad"
@@ -57,6 +59,7 @@ def task_generateSetup():
         'title': show_cmd,
         'verbosity': 2,
         'doc': "generate setup.tcl",
+        'uptodate': [run_once],
     }
 
 
@@ -71,7 +74,8 @@ def task_synthesis():
     if synthTool == "yosys":
         invokeTool = synthTool +" -c " + synthMethadology + "/" + synthTool + "/synthesis.tcl"
     if synthTool == "genus":
-        invokeTool = synthTool + " -f "+ synthMethadology + "/" + synthTool + "/synthesis.tcl"
+        invokeTool = "\\"+synthTool + " -f "+ synthMethadology + "/" + synthTool + "/synthesis.tcl"
+
 
     def python_preSynthesis():
         print(" place holder for presynthesis checks using python")

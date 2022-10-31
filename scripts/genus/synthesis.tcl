@@ -25,12 +25,13 @@ set GEN_EFF $effort
 set MAP_OPT_EFF $effort
 set DATE [clock format [clock seconds] -format "%b%d-%T"] 
 set _OUTPUTS_PATH outputs_${DATE}
-set _REPORTS_PATH reports_${DATE}
-set _LOG_PATH logs_${DATE}
+set _OUTPUTS_PATH outputs
+set _REPORTS_PATH reports
+set _LOG_PATH logs
 ##set ET_WORKDIR <ET work directory>
-set_db / .init_lib_search_path {. ${libSearchPath}} 
-set_db / .script_search_path {. ${libSearchPath}} 
-set_db / .init_hdl_search_path {. ${RTLPath}} 
+set_db / .init_lib_search_path {.} 
+set_db / .script_search_path {.} 
+set_db / .init_hdl_search_path {.} 
 ##Uncomment and specify machine names to enable super-threading.
 ##set_db / .super_thread_servers {<machine names>} 
 ##For design size of 1.5M - 5M gates, use 8 to 16 CPUs. For designs > 5M gates, use 16 to 32 CPUs

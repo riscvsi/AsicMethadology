@@ -4,3 +4,5 @@ __pycache__/
 setup.tcl
 .doit.db
 openroad.log
+.genus.*
+

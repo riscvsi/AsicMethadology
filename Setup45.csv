@@ -1,10 +1,13 @@
-blockName,first_counterNew
-RTLPath,./
-RTLFile,counter/counter.v
-designName,first_counterNew
-sdcFile,./firstCounter.sdc
+blockName,leon
+designName,leon
+RTLFile,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/DATA/leon.v.gz
+sdcFile,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/DATA/leon_func_slow_max.sdc
 effort,medium
-libFiles,./counter/sky130_fd_sc_hd__tt_025C_1v80.lib
-libSearchPath,./
-lefFiles,./
-lefSearchPath,./
+libFiles,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM2_4096X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM2_2048X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/pdkIO.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM2_512X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM2_136X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM2_128X16_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM2_1024X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM1_4096X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM1_256X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM1_1024X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/max/MEM2_128X32_slow.lib
+libMinFiles,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/pdkIO.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM2_512X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM2_4096X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM2_2048X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM2_136X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM2_128X16_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM2_1024X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM1_4096X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM1_256X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM1_1024X32_slow.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/fast.lib /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lib/min/MEM2_128X32_slow.lib
+lefFiles,"/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lef/gsclib045.fixed2.lef /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lef/MEM2_128X32.lef /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lef/MEM1_256X32.lef /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/lef/pads.lef"
+capTableMin,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/captbl/best/capTable
+capTableMax,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/captbl/worst/capTable
+qxMapFile,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/mapFile
+qxTechFile,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/qrcTechFile
+qxConfFile,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/qrc.conf
