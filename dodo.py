@@ -8,12 +8,7 @@ designName = "leon"
 synthTool = "genus"
 synthMethadology = "./scripts/"
 
-floorplanTool = "openroad"
-powerplanTool = "openroad"
-placementTool = "openroad"
-ctsTool = "openroad"
-routeTool = "openroad"
-chipFinishTool = "openroad"
+pnrTool = "innovus"
 
 ## this is to show the section that is getting executed
 def show_cmd(task):
@@ -98,7 +93,7 @@ def task_synthesis():
 
 
 
-def task_floorplan():
+def task_pnr():
     """perform floorplan on the design"""
     ## read the csv file and determine what rows are needed for synthesis
     
@@ -107,10 +102,10 @@ def task_floorplan():
     depFiles.append("setup.tcl")
 
     #"setup.tcl" , " temp.v "
-    if floorplanTool == "openroad":
-        invokeTool = floorplanTool +"  " + synthMethadology + "/" + floorplanTool + "/floorplan.tcl -log openroad.log"
+    if pnrTool == "openroad":
+        invokeTool = pnrTool +"  " + synthMethadology + "/" + pnrTool + "/floorplan.tcl -log openroad.log"
     if floorplanTool == "innovus":
-        invokeTool = floorplanTool + " -f "+ synthMethadology + "/" + floorplanTool + "/floorplan.tcl"
+        invokeTool = pnrTool + " -f "+ synthMethadology + "/" + pnrTool + "/floorplan.tcl"
 
     def python_preFloorplan():
         print(" place holder for prefloorplan checks using python")
