@@ -104,7 +104,7 @@ def task_pnr():
     #"setup.tcl" , " temp.v "
     if pnrTool == "openroad":
         invokeTool = pnrTool +"  " + synthMethadology + "/" + pnrTool + "/floorplan.tcl -log openroad.log"
-    if floorplanTool == "innovus":
+    if pnrTool == "innovus":
         invokeTool = pnrTool + " -f "+ synthMethadology + "/" + pnrTool + "/floorplan.tcl"
 
     def python_preFloorplan():
