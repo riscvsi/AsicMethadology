@@ -1,13 +1,6 @@
 
 source setup.tcl
 
-set_db design_process_node 45
-
-set_multi_cpu_usage -local_cpu 2
-set_db timing_analysis_type ocv 
-set_db timing_analysis_cppr both
-set_db place_global_place_io_pins true
-
 
 set conf_qxconf_file {NULL}
 set conf_qxlib_file {NULL}
@@ -15,11 +8,12 @@ set defHierChar {/}
 set init_design_settop 0
 set init_gnd_net {VSS}
 set init_lef_file $lefFiles
-set init_mmmc_file scripts/innovus/mmmc${technology}.tcl}
+set init_mmmc_file [file normalize scripts/innovus/mmmc${technology}.tcl]
 set init_pwr_net {VDD}
-set init_verilog synthesis/${designName}_synth.v
+set init_verilog [file normalize synthesis/outputs/${designName}_synth.v]
+set powerIntent [file normalize synthesis/outputs/${designName}_synth.upf]
 set lsgOCPGainMult 1.000000
-
+set init_design_settop ${designName}
 
 set pnrDir "pnr"
 if {![file exists $pnrDir]} {
@@ -32,15 +26,19 @@ catch {cd $pnrDir}
 set_multi_cpu_usage -local_cpu 2 -verbose
 
 ### need to generated viewDefinition_cui.tcl and use it here
-#read_mmmc ../INPUT/viewDefinition_cui.tcl
+read_mmmc $init_mmmc_file
 ###
 
 
 read_physical -lef $lefFiles
 
-read_netlist synthesis/output/${designName}.synth.v
+read_netlist $init_verilog
 
-read_power_intent -1801 synthesis/output/${designName}.synth.upf
+if [file exists $powerIntent] {
+read_power_intent -1801 synthesis/outputs/${designName}.synth.upf
+} else {
+puts "FlowError: please create a upf file for pnr consumption"
+}
 
 init_design
 
