@@ -49,3 +49,5 @@ check_power_domains -nets_missing_shifter
 
 
 write_db setupComplete
+
+exit
