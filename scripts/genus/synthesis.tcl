@@ -234,9 +234,9 @@ report_dp > $_REPORTS_PATH/${DESIGN}_datapath_incr.rpt
 report_messages > $_REPORTS_PATH/${DESIGN}_messages.rpt
 write_snapshot -outdir $_REPORTS_PATH -tag final
 report_summary -directory $_REPORTS_PATH
-## write_hdl  > ${_OUTPUTS_PATH}/${DESIGN}_m.v
+write_hdl  > ${_OUTPUTS_PATH}/${DESIGN}_synth.v
 ## write_script > ${_OUTPUTS_PATH}/${DESIGN}_m.script
-write_sdc > ${_OUTPUTS_PATH}/${DESIGN}_m.sdc
+write_sdc > ${_OUTPUTS_PATH}/${DESIGN}_synth.sdc
 
 
 #################################
@@ -246,7 +246,7 @@ write_sdc > ${_OUTPUTS_PATH}/${DESIGN}_m.sdc
 
 write_do_lec -golden_design fv_map -revised_design ${_OUTPUTS_PATH}/${DESIGN}_m.v -logfile  ${_LOG_PATH}/intermediate2final.lec.log > ${_OUTPUTS_PATH}/intermediate2final.lec.do
 ##Uncomment if the RTL is to be compared with the final netlist..
-##write_do_lec -revised_design ${_OUTPUTS_PATH}/${DESIGN}_m.v -logfile ${_LOG_PATH}/rtl2final.lec.log > ${_OUTPUTS_PATH}/rtl2final.lec.do
+write_do_lec -revised_design ${_OUTPUTS_PATH}/${DESIGN}_m.v -logfile ${_LOG_PATH}/rtl2final.lec.log > ${_OUTPUTS_PATH}/rtl2final.lec.do
 
 puts "Final Runtime & Memory."
 time_info FINAL
