@@ -30,6 +30,8 @@ def task_Methadology():
 
 
 ### this section we generate the setup.tcl file for all the runs
+
+## author: Manohar
 def task_generateSetup():
     import pandas as pd
     import numpy as np
@@ -44,7 +46,10 @@ def task_generateSetup():
         final_df=required_col
         print(final_df.values)
         for i in required_col:
-            fmt+=" %s "
+            if i==designName:
+                fmt+= " \"%s\" "
+            else:
+                fmt+=" %s "
         np.savetxt(r'setup.tcl', final_df.values, fmt=fmt)
 
         
