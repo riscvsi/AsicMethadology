@@ -1,6 +1,13 @@
 
 source setup.tcl
 
+set_db design_process_node 45
+
+set_multi_cpu_usage -local_cpu 2
+set_db timing_analysis_type ocv 
+set_db timing_analysis_cppr both
+set_db place_global_place_io_pins true
+
 
 set conf_qxconf_file {NULL}
 set conf_qxlib_file {NULL}
