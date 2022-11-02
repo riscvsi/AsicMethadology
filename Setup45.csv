@@ -11,3 +11,4 @@ capTableMax,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_bloc
 qxMapFile,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/mapFile
 qxTechFile,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/qrcTechFile
 qxConfFile,/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/qrc.conf
+technology,45
