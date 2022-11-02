@@ -22,7 +22,7 @@ if {![file exists $pnrDir]} {
 catch {cd $pnrDir}
 
 
-set_multi_cpu_usage -local_cpu $numCPUPnR -verbose
+set_multi_cpu_usage -local_cpu 2 -verbose
 
 ### need to generated viewDefinition_cui.tcl and use it here
 #read_mmmc ../INPUT/viewDefinition_cui.tcl
