@@ -36,7 +36,7 @@ def task_generateSetup():
     import pandas as pd
     import numpy as np
 
-    createDirectory = "mkdir generatedInputs"
+    createDirectory = "rm -rf generatedInputs; mkdir generatedInputs"
 
     def python_generateSetup():
         print ("loading the csvFile :", csvFile , "converting to setup.tcl please wait")
