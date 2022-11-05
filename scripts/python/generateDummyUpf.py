@@ -9,7 +9,7 @@ parser.add_argument("-D", dest = "designName", help="increase output verbosity",
 args = parser.parse_args()
 
 print(args.designName)
-upfFile = generatedInputs+"/"+args.designName + ".upf"
+upfFile = "generatedInputs/"+args.designName + ".upf"
 
 file1 = open(upfFile, 'w')
 data = ''' # generating dummy upf file 
