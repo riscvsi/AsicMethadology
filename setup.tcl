@@ -10,3 +10,4 @@ set  capTableMax  "/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18
 set  qxMapFile  "/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/mapFile" 
 set  qxTechFile  "/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/qrcTechFile" 
 set  qxConfFile  "/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/RAK_18.1_blockImplementation/LIBS/qx/qrc.conf" 
+set  technology  "45" 
