@@ -6,3 +6,4 @@ setup.tcl
 openroad.log
 .genus.*
 .innovus.*
+generatedInputs

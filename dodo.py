@@ -35,6 +35,9 @@ def task_Methadology():
 def task_generateSetup():
     import pandas as pd
     import numpy as np
+
+    createDirectory = "mkdir generatedInputs"
+
     def python_generateSetup():
         print ("loading the csvFile :", csvFile , "converting to setup.tcl please wait")
         df = pd.read_csv(csvFile)
@@ -52,9 +55,11 @@ def task_generateSetup():
                 fmt+=" %s "
         np.savetxt(r'setup.tcl', final_df.values, fmt=fmt)
 
+
+    generateUpf = "python scripts/python/generateDummyUpf.py -D "+designName
         
     return {
-        'actions': [python_generateSetup],
+        'actions': [createDirectory, python_generateSetup, generateUpf],
         'targets': ["setup.tcl"],
         'title': show_cmd,
         'verbosity': 2,
