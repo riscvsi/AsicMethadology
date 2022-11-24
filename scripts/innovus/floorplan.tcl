@@ -13,7 +13,7 @@ set init_pwr_net {VDD}
 set init_verilog [file normalize synthesis/outputs/${designName}_synth.v]
 set powerIntent [file normalize synthesis/outputs/${designName}_synth.upf]
 set lsgOCPGainMult 1.000000
-set init_design_settop ${designName}
+set init_design_setup ${designName}
 
 set pnrDir "pnr"
 if {![file exists $pnrDir]} {
