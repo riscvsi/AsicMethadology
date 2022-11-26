@@ -77,7 +77,7 @@ set_db / .leakage_power_effort medium
 ####################################################################
 
 
-read_hdl $RTLFile
+read_hdl -sv $RTLFile
 elaborate $DESIGN
 puts "Runtime & Memory after 'read_hdl'"
 time_info Elaboration
@@ -93,7 +93,15 @@ check_design -unresolved
 read_sdc $sdcFile
 puts "The number of exceptions is [llength [vfind "design:$DESIGN" -exception *]]"
 
-
+###########
+# upf file read
+if {[file exists ../scripts/genus/block.upf]} {
+read_power_intent -1801 ../scripts/genus/block.upf -module $DESIGN
+apply_power_intent
+commit_power_intent
+}
+#
+###########
 #set_db "design:$DESIGN" .force_wireload <wireload name> 
 
 if {![file exists ${_LOG_PATH}]} {
@@ -237,7 +245,7 @@ report_summary -directory $_REPORTS_PATH
 write_hdl  > ${_OUTPUTS_PATH}/${DESIGN}_synth.v
 ## write_script > ${_OUTPUTS_PATH}/${DESIGN}_m.script
 write_sdc > ${_OUTPUTS_PATH}/${DESIGN}_synth.sdc
-
+write_power_intent -1801 > ${_OUTPUTS_PATH}/${DESIGN}.upf
 
 #################################
 ### write_do_lec

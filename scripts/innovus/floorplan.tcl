@@ -48,6 +48,6 @@ check_power_domains -nets_missing_iso
 check_power_domains -nets_missing_shifter
 
 
-write_db setupComplete
+write_db setupComplete.inn
 
 exit

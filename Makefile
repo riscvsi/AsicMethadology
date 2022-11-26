@@ -32,10 +32,14 @@ route: ctsCompleted
 	$(pnrTool) -file SCRIPTS/innovusRoute.tcl
 	touch routeCompleted
 
+iterminal:
+	echo "getting a innovus terminal"
+	$(pnrTool)
+
 all: synth place cts route
 
 clean:
-	rm synthCompleted placementCompleted ctsCompleted routeCompleted
+	rm pvsUI_ipvs.log fpCompleted synthCompleted placementCompleted ctsCompleted routeCompleted innovus.log* innovus.cmd* genus.log* genus.cmd*
 
 
 #######################

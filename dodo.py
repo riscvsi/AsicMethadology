@@ -3,7 +3,7 @@ from doit.action import CmdAction
 from doit.tools import run_once
 
 csvFile = "Setup45.csv"
-designName = "leon"
+designName = "scr1_pipe_top"
 
 synthTool = "genus"
 synthMethadology = "./scripts/"
