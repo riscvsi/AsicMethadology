@@ -3,8 +3,8 @@ block = RISCV
 
 ## technology used 130 / 45
 #### tool definition
-synthTool = genus
-pnrTool = innovus 
+synthTool = \genus
+pnrTool = \innovus -stylus
 ############
 
 synth: 
@@ -14,7 +14,7 @@ synth:
 
 fp : synthCompleted
 	echo "placement completed"
-	$(pnrTool) -file scripts/floorplan/floorplan.tcl
+	$(pnrTool) -file scripts/innovus/floorplan.tcl
 	touch fpCompleted
 
 place: fpCompleted
