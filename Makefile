@@ -7,6 +7,12 @@ synthTool = \genus
 pnrTool = \innovus -stylus
 ############
 
+getLibrary: 
+	echo "get the libraries into your area"
+	git clone https://github.com/riscvsi/technology.git
+	echo "libraries copied to main area"
+
+
 synth: 
 	echo "Synthesis completed"
 	$(synthTool) -file scripts/genus/synthesis.tcl
