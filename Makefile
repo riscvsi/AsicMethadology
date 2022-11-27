@@ -13,24 +13,35 @@ synth:
 	touch synthCompleted
 
 fp : synthCompleted
-	echo "placement completed"
+	echo "Synthesis completed"
 	$(pnrTool) -file scripts/innovus/floorplan.tcl
 	touch fpCompleted
 
-place: fpCompleted
-	echo "placement completed"
-	$(pnrTool) -file SCRIPTS/innovusPlace.tcl
+pmesh: fpCompleted
+	echo "floorplan completed starting power planning"
+	$(pnrTool) -file scripts/innovus/power_stripe.tcl
+	touch pmesh
+
+place: pmesh
+	echo "power mesh completed starting placement"
+	$(pnrTool) -file scripts/innovus/placement.tcl
 	touch placementCompleted
 
 cts: placementCompleted
 	echo "cts completed";
-	$(pnrTool) -file SCRIPTS/innovusCts.tcl
+	$(pnrTool) -file scripts/innovus/cts.tcl
 	touch ctsCompleted
 
 route: ctsCompleted
 	echo "route completed"
-	$(pnrTool) -file SCRIPTS/innovusRoute.tcl
+	$(pnrTool) -file scripts/innovus/route.tcl 
 	touch routeCompleted
+
+output: routeCompleted 
+	echo "dump files"
+	$(pnrTool) -file scripts/innovus/outputs.tcl
+	touch outputCompleted 
+
 
 iterminal:
 	echo "getting a innovus terminal"

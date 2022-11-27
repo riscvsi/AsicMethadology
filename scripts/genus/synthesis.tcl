@@ -245,8 +245,8 @@ report_summary -directory $_REPORTS_PATH
 write_hdl  > ${_OUTPUTS_PATH}/${DESIGN}_synth.v
 ## write_script > ${_OUTPUTS_PATH}/${DESIGN}_m.script
 write_sdc > ${_OUTPUTS_PATH}/${DESIGN}_synth.sdc
-write_power_intent -1801 > ${_OUTPUTS_PATH}/${DESIGN}.upf
-
+write_power_intent -1801 -base_name ${_OUTPUTS_PATH}/${DESIGN}_synth.upf
+ write_lib_lef -lib ${_OUTPUTS_PATH}/${DESIGN}
 #################################
 ### write_do_lec
 #################################

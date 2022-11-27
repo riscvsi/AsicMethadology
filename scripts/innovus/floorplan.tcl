@@ -11,7 +11,7 @@ set init_lef_file $lefFiles
 set init_mmmc_file [file normalize scripts/innovus/mmmc${technology}.tcl]
 set init_pwr_net {VDD}
 set init_verilog [file normalize synthesis/outputs/${designName}_synth.v]
-set powerIntent [file normalize synthesis/outputs/${designName}_synth.upf]
+set powerIntent [file normalize synthesis/outputs/${designName}_synth1.upf]
 set lsgOCPGainMult 1.000000
 set init_design_setup ${designName}
 
@@ -34,15 +34,13 @@ read_physical -lef $lefFiles
 
 read_netlist $init_verilog
 
-if [file exists $powerIntent] {
-read_power_intent -1801 synthesis/outputs/${designName}.synth.upf
-} else {
-puts "FlowError: please create a upf file for pnr consumption"
-}
-
 init_design
+create_floorplan -site CoreSite -core_density_size 1 0.7 10 10 10 10
 
+read_power_intent -1801 ../synthesis/outputs/${designName}_synth.upf
 commit_power_intent -verbose
+
+
 
 check_power_domains -nets_missing_iso
 check_power_domains -nets_missing_shifter
