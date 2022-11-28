@@ -12,6 +12,10 @@ getLibrary:
 	git clone https://github.com/riscvsi/technology.git
 	echo "libraries copied to main area"
 
+getNetlist: 
+	echo "get the netlist into your area"
+	git clone https://github.com/riscvsi/riscvCoreSyntaCore1.git
+	echo "netlist copied"
 
 synth: 
 	echo "Synthesis completed"

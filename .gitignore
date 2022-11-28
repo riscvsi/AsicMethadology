@@ -8,3 +8,5 @@ openroad.log
 .innovus.*
 generatedInputs
 technology
+riscvCoreSyntaCore1
+
