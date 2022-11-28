@@ -10,6 +10,10 @@ pnrTool = \innovus -stylus
 getLibrary: 
 	echo "get the libraries into your area"
 	git clone https://github.com/riscvsi/technology.git
+	echo "point to the cadence library area LIBS directory"
+	read techLoc
+	echo "copying the qrc tech files and creating the area"
+	cp ${techLoc}/qx/qrcTechFile technology/45/qx/qrcTechFile
 	echo "libraries copied to main area"
 
 getNetlist: 
@@ -18,7 +22,8 @@ getNetlist:
 	echo "netlist copied"
 
 synth: 
-	echo "Synthesis completed"
+	echo "Synthesis started"
+	rm -rf synthesis
 	$(synthTool) -file scripts/genus/synthesis.tcl
 	touch synthCompleted
 
@@ -56,6 +61,12 @@ output: routeCompleted
 iterminal:
 	echo "getting a innovus terminal"
 	$(pnrTool)
+
+
+gterminal:
+	echo "getting a genus terminal"
+	$(synthTool)
+
 
 all: synth place cts route
 

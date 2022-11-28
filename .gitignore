@@ -1,7 +1,6 @@
 counter/
 __pycache__/
 *.v
-setup.tcl
 .doit.db
 openroad.log
 .genus.*

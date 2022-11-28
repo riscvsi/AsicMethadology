@@ -47,9 +47,19 @@ set_db / .information_level 7
 ###############################################################
 
 
+
+if {$designName == "scr1_pipe_top"} {
+lappend libFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
+}
 read_libs  $libFiles
 
+
+if {$designName == "scr1_pipe_top"} {
+lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef
+}
 read_physical -lef $lefFiles
+
+
 #" ../LEF/gsclib045_tech.lef ../LEF/gsclib045_macro.lef ../LEF/pll.lef   ../LEF/CDK_S128x16.lef  ../LEF/CDK_S256x16.lef ../LEF/CDK_R512x16.lef " 
 
 ## Provide either cap_table_file or the qrc_tech_file
