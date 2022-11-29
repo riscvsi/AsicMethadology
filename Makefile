@@ -21,6 +21,11 @@ getNetlist:
 	git clone https://github.com/riscvsi/riscvCoreSyntaCore1.git
 	echo "netlist copied"
 
+soc:
+	echo "SOC initialised"
+	$(pnrTool) -file scripts/innovus/topSoc.tcl
+	echo "top database generated"
+
 synth: 
 	echo "Synthesis started"
 	rm -rf synthesis
