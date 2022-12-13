@@ -76,9 +76,9 @@ set  qxConfFile  "../technology/${technology}/qx/qrc.conf"
 
 lappend libFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
 lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
-lappend libFiles /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/pnr/scr1_pipe_top.lib
-lappend libMinFiles /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/pnr/scr1_pipe_top.lib
-lappend lefFiles /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/pnr/scr1_pipe_top.lef
+lappend libFiles ../riscvCoreSyntaCore1/ramInputs/scr1_pipe_top.lib
+lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/scr1_pipe_top.lib
+lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/scr1_pipe_top.lef
 lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef
 
 
@@ -107,7 +107,8 @@ catch {cd $pnrDir}
 set_multi_cpu_usage -local_cpu 2 -verbose
 
 ### need to generated viewDefinition_cui.tcl and use it here
-read_mmmc $init_mmmc_file
+read_mmmc ../scripts/innovus/mmmc45Soc.tcl
+#$init_mmmc_file
 ###
 
 
