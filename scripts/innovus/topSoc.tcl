@@ -19,6 +19,7 @@ foreach_in_collection port [get_ports * -filter "direction == in"] {
 	    puts "connected [get_object_name [get_pins $conPins]] with net name rcg_${pPort}_conNet"
 	    puts "connect [get_pins $conPins] -net_name rcg_${pPort}_conNet"
 	    #connect [get_pins $conPins] -net_name rcg_${pPort}_conNet
+		    create_net rcg_${pPort}_conNet
 	    foreach_in_collection pins [get_pins $conPins] {
 		connect_pin -inst [get_object_name [get_cells -of $pins]] -pin [file tail [get_object_name $pins]] -net rcg_${pPort}_conNet
 	    }
