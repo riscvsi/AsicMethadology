@@ -6,6 +6,9 @@ block = RISCV
 synthTool = \genus
 pnrTool = \innovus -stylus
 ############
+.PHONY: all_targets
+all_targets: synth fp pmesh place cts route output
+
 
 getLibrary: 
 	echo "get the libraries into your area"
@@ -26,37 +29,44 @@ soc:
 	$(pnrTool) -file scripts/innovus/topSoc.tcl
 	echo "top database generated"
 
+.PHONY: synth
 synth: 
 	echo "Synthesis started"
 	rm -rf synthesis
 	$(synthTool) -file scripts/genus/synthesis.tcl
 	touch synthCompleted
 
+.PHONY: fp
 fp : synthCompleted
 	echo "Synthesis completed"
 	$(pnrTool) -file scripts/innovus/floorplan.tcl
 	touch fpCompleted
 
+.PHONY: pmesh
 pmesh: fpCompleted
 	echo "floorplan completed starting power planning"
 	$(pnrTool) -file scripts/innovus/power_stripe.tcl
 	touch pmesh
 
+.PHONY: place
 place: pmesh
 	echo "power mesh completed starting placement"
 	$(pnrTool) -file scripts/innovus/placement.tcl
 	touch placementCompleted
 
+.PHONY: cts
 cts: placementCompleted
 	echo "cts completed";
 	$(pnrTool) -file scripts/innovus/cts.tcl
 	touch ctsCompleted
 
+.PHONY: route
 route: ctsCompleted
 	echo "route completed"
 	$(pnrTool) -file scripts/innovus/route.tcl 
 	touch routeCompleted
 
+.PHONY: output
 output: routeCompleted 
 	echo "dump files"
 	$(pnrTool) -file scripts/innovus/outputs.tcl
