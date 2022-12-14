@@ -7,19 +7,23 @@ set padio "PADIO"
 set cornerpad "PADCORNER"
 
 foreach_in_collection port [get_ports * -filter "direction == in"] {
-    set pPort [get_object_name $port]
-   puts "create_inst -name pad_i_[get_object_name $port] -base_cell ${padi}"
-   create_inst -name pad_i_[get_object_name $port] -base_cell ${padi}
-   puts "in pad cell created cell pad_i_${pPort}"
-   set conPins [get_pins -of [get_nets $port]]
-   set conPins [add_to_collection [get_pins $conPins] [get_pins pad_i_${pPort}/OUT]]
-   puts "connected [get_object_name [get_pins $conPins]] with net name rcg_${pPort}_conNet"
-   puts "connect [get_pins $conPins] -net_name rcg_${pPort}_conNet"
-   connect [get_pins $conPins] -net_name rcg_${pPort}_conNet
-#   connect  [get_pins pad_i_${pPort}/PAD] -net $pPort
-   puts "connected  pad_i_${pPort}/PAD with ${pPort}"
-    puts "connect_pin -inst pad_i_${pPort} -pin PAD -net $pPort"
-    connect_pin -inst pad_i_${pPort} -pin PAD -net $pPort
+## methadology team should complete it
+	#if size of collection of get_pin 
+	if {[sizeof_collection <complete this>] > 0} {
+	    set pPort [get_object_name $port]
+	    puts "create_inst -name pad_i_[get_object_name $port] -base_cell ${padi}"
+	    create_inst -name pad_i_[get_object_name $port] -base_cell ${padi}
+	    puts "in pad cell created cell pad_i_${pPort}"
+	    set conPins [get_pins -of [get_nets $port]]
+	    set conPins [add_to_collection [get_pins $conPins] [get_pins pad_i_${pPort}/OUT]]
+	    puts "connected [get_object_name [get_pins $conPins]] with net name rcg_${pPort}_conNet"
+	    puts "connect [get_pins $conPins] -net_name rcg_${pPort}_conNet"
+	    connect [get_pins $conPins] -net_name rcg_${pPort}_conNet
+	 #   connect  [get_pins pad_i_${pPort}/PAD] -net $pPort
+	    puts "connected  pad_i_${pPort}/PAD with ${pPort}"
+	    puts "connect_pin -inst pad_i_${pPort} -pin PAD -net $pPort"
+	    connect_pin -inst pad_i_${pPort} -pin PAD -net $pPort
+    }
 }
 
 puts "\n\n\n"
