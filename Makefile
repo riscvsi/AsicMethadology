@@ -45,24 +45,28 @@ fp : synthCompleted
 .PHONY: pmesh
 pmesh: fpCompleted
 	echo "floorplan completed starting power planning"
+	puts "innovus -stylus -file scripts/innovus/power_stripe.tcl"
 	$(pnrTool) -file scripts/innovus/power_stripe.tcl
 	touch pmesh
 
 .PHONY: place
 place: pmesh
 	echo "power mesh completed starting placement"
+	puts "innovus -stylus -file scripts/innovus/placement.tcl"
 	$(pnrTool) -file scripts/innovus/placement.tcl
 	touch placementCompleted
 
 .PHONY: cts
 cts: placementCompleted
 	echo "cts completed";
+	puts "innovus -stylus -file scripts/innovus/cts.tcl"
 	$(pnrTool) -file scripts/innovus/cts.tcl
 	touch ctsCompleted
 
 .PHONY: route
 route: ctsCompleted
 	echo "route completed"
+	puts "innovus -stylus -file scripts/innovus/route.tcl"
 	$(pnrTool) -file scripts/innovus/route.tcl 
 	touch routeCompleted
 
