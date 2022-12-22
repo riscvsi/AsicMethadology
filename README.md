@@ -237,3 +237,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 <p> students - students@outlook.com </p>
 <p> Manohar - manoharprakashreddy2001@gmail.com</p>
 <p> Nandika - nandikar1611@gmail.com</p>
+<p> Varsha - varsham20011@gmail.com</p>
+<p> Samhitha - samhitha.bhat@outlook.com</p>
