@@ -45,7 +45,7 @@ fp : synthCompleted
 .PHONY: pmesh
 pmesh: fpCompleted
 	echo "floorplan completed starting power planning"
-	puts "innovus -stylus -file scripts/innovus/power_stripe.tcl"
+	echo "innovus -stylus -file scripts/innovus/power_stripe.tcl"
 	$(pnrTool) -file scripts/innovus/power_stripe.tcl
 	touch pmesh
 
