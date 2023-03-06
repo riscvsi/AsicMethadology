@@ -8,7 +8,9 @@ if {$designName == "scr1_pipe_top"} {
     lappend libFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
     lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
     lappend libFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lib
+    lappend libFiles ../riscvCoreSyntaCore1/ramInputs/uart.lib
     lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lib
+    lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/uart.lib
 }
 
 set conf_qxconf_file {NULL}
@@ -42,6 +44,7 @@ read_mmmc $init_mmmc_file
 if {$designName == "scr1_pipe_top"} {
     lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef
     lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lef
+    lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/uart.lef
 }
 read_physical -lef $lefFiles
 
