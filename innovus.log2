@@ -1,0 +1,1072 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.14-e032_1, built Thu Mar 17 14:36:51 PDT 2022
+Options:	-stylus -file scripts/innovus/floorplan.tcl 
+Date:		Sun Mar 12 10:35:47 2023
+Host:		scc322231 (x86_64 w/Linux 4.12.14-122.136-default) (6cores*6cpus*Intel(R) Xeon(R) E-2236 CPU @ 3.40GHz 12288KB)
+OS:		SUSE Linux Enterprise Server 12 (x86_64)
+
+License:
+		[10:35:47.493481] Configured Lic search path (20.02-s004): 5280@cadence22p.elic.intel.com:5280@cadence20p.elic.intel.com:5280@cadence24p.elic.intel.com:5280@cadence17b.elic.intel.com:5280@cadence01p.elic.intel.com:5280@cadence02p.elic.intel.com:5280@cadence39p.elic.intel.com:5280@cadence47p.elic.intel.com:5280@ca
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+***************************************************************************************
+WARNING: R&D BUILD - use only as directed by your Cadence support team.
+INFO:    The prefix [DEV] has been added to the prompt as a reminder of that situation.
+***************************************************************************************
+
+
+
+***********************************************************************************************************
+This build has not been tested or validated. Limit usage to validating specific bug fixes or enhancements.
+Need to migrate to next available yellow version as soon as it is available.
+This engineering build is for use by Intel for the LNL project.
+It should not be used for other purposes.
+This build will expire on 7/31/2023
+***********************************************************************************************************
+
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_459_scc322231_rcg_hK7q82.
+
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[INFO] Loading PVS  fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+#@ Processing -files option
+@[DEV]innovus 1> source scripts/innovus/floorplan.tcl
+#@ Begin verbose source (pre): source scripts/innovus/floorplan.tcl
+@file 1:
+@file 2: source setup.tcl
+#@ Begin verbose source setup.tcl (pre)
+@file 1: set  designName  "scr1_pipe_top" 
+@file 2: set  technology  "45"
+@file 3: set  RTLFile  "../riscvCoreSyntaCore1/src/includes/scr1_ahb.svh ../riscvCoreSyntaCore1/src/includes/scr1_arch_description.svh ../riscvCoreSyntaCore1/src/includes/scr1_arch_types.svh ../riscvCoreSyntaCore1/src/includes/scr1_csr.svh ../riscvCoreSyntaCore1/src/includes/scr1_dm.svh ../riscvCoreSyntaCore1/src/includes/scr1_hdu.svh ../riscvCoreSyntaCore1/src/includes/scr1_ipic.svh ../riscvCoreSyntaCore1/src/includes/scr1_memif.svh ../riscvCoreSyntaCore1/src/includes/scr1_riscv_isa_decoding.svh ../riscvCoreSyntaCore1/src/includes/scr1_scu.svh ../riscvCoreSyntaCore1/src/includes/scr1_search_ms1.svh ../riscvCoreSyntaCore1/src/includes/scr1_tapc.svh ../riscvCoreSyntaCore1/src/includes/scr1_tdu.svh ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_exu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_ialu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_idu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_ifu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_lsu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_mprf.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_top.sv ../riscvCoreSyntaCore1/src/core/scr1_core_top.sv" 
+@file 4: set  sdcFile  "../riscvCoreSyntaCore1/constraints/scr1_pipe_top.sdc" 
+@file 5: set  effort  "medium" 
+@file 6: set  libFiles  "../technology/${technology}/lib/max/MEM2_4096X32_slow.lib ../technology/${technology}/lib/max/MEM2_2048X32_slow.lib ../technology/${technology}/lib/max/pdkIO.lib ../technology/${technology}/lib/max/MEM2_512X32_slow.lib ../technology/${technology}/lib/max/MEM2_136X32_slow.lib ../technology/${technology}/lib/max/MEM2_128X16_slow.lib ../technology/${technology}/lib/max/MEM2_1024X32_slow.lib ../technology/${technology}/lib/max/MEM1_4096X32_slow.lib ../technology/${technology}/lib/max/MEM1_256X32_slow.lib ../technology/${technology}/lib/max/MEM1_1024X32_slow.lib ../technology/${technology}/lib/max/slow.lib ../technology/${technology}/lib/max/MEM2_128X32_slow.lib" 
+@file 7: set  libMinFiles  "../technology/${technology}/lib/min/pdkIO.lib ../technology/${technology}/lib/min/MEM2_512X32_slow.lib ../technology/${technology}/lib/min/MEM2_4096X32_slow.lib ../technology/${technology}/lib/min/MEM2_2048X32_slow.lib ../technology/${technology}/lib/min/MEM2_136X32_slow.lib ../technology/${technology}/lib/min/MEM2_128X16_slow.lib ../technology/${technology}/lib/min/MEM2_1024X32_slow.lib ../technology/${technology}/lib/min/MEM1_4096X32_slow.lib ../technology/${technology}/lib/min/MEM1_256X32_slow.lib ../technology/${technology}/lib/min/MEM1_1024X32_slow.lib ../technology/${technology}/lib/min/fast.lib ../technology/${technology}/lib/min/MEM2_128X32_slow.lib" 
+@file 8: set  lefFiles  "../technology/${technology}/lef/gsclib045.fixed2.lef ../technology/${technology}/lef/MEM2_128X32.lef ../technology/${technology}/lef/MEM1_256X32.lef ../technology/${technology}/lef/pads.lef" 
+@file 9: set  capTableMin  "../technology/${technology}/captbl/best/capTable" 
+@file 10: set  capTableMax  "../technology/${technology}/captbl/worst/capTable" 
+@file 11: set  qxMapFile  "../technology/${technology}/qx/mapFile" 
+@file 12: set  qxTechFile  "../technology/${technology}/qx/qrcTechFile" 
+@file 13: set  qxConfFile  "../technology/${technology}/qx/qrc.conf" 
+@file 14:
+#@ End verbose source setup.tcl
+@file 3:
+@file 4:
+@file 5:
+@file 6:
+@file 7: if {$designName == "scr1_pipe_top"} {
+@file 8: lappend libFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
+@file 9: lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
+@file 10: lappend libFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lib
+@file 11: lappend libFiles ../riscvCoreSyntaCore1/ramInputs/uart.lib
+@file 12: lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lib
+@file 13: lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/uart.lib
+@file 14: }
+@file 15:
+@file 16: set conf_qxconf_file {NULL}
+@file 17: set conf_qxlib_file {NULL}
+@file 18: set defHierChar {/}
+@file 19: set init_design_settop 0
+@file 20: set init_gnd_net {VSS}
+@file 21: set init_lef_file $lefFiles
+@file 22: set init_mmmc_file [file normalize scripts/innovus/mmmc${technology}.tcl]
+@file 23: set init_pwr_net {VDD}
+@file 24: set init_verilog [file normalize synthesis/outputs/${designName}_synth.v]
+@file 25: set powerIntent [file normalize synthesis/outputs/${designName}_synth1.upf]
+@file 26: set lsgOCPGainMult 1.000000
+@file 27: set init_design_setup ${designName}
+@file 28:
+@file 29: set pnrDir "pnr"
+@file 30: if {![file exists $pnrDir]} {...}
+@file 34: catch {cd $pnrDir}
+@file 35:
+@file 36:
+@file 37: set_multi_cpu_usage -local_cpu 2 -verbose
+set_multi_cpu_usage -local_cpu 2
+@file 38:
+@file 39: ### need to generated viewDefinition_cui.tcl and use it here
+@file 40: read_mmmc $init_mmmc_file
+#@ Begin verbose source /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/scripts/innovus/mmmc45.tcl (pre)
+@file 1:
+@file 2: create_library_set -name fast\
+   -timing\
+    [list $libMinFiles]
+@file 5: create_library_set -name slow\
+   -timing\
+    [list $libFiles]
+@file 8: create_timing_condition -name tc_slow -library_sets slow 
+@file 9: create_timing_condition -name tc_fast -library_sets fast
+@file 10: create_rc_corner -name rc_best\
+   -cap_table $capTableMin\
+   -pre_route_res 1.34236\
+   -post_route_res 1.34236\
+   -pre_route_cap 1.10066\
+   -post_route_cap 0.960235\
+   -post_route_cross_cap 1.22327\
+   -pre_route_clock_res 0\
+   -pre_route_clock_cap 0\
+   -post_route_clock_cap {0.969117 0 0}\
+   -T 0\
+   -qrc_tech $qxTechFile
+@file 22:
+@file 23: create_rc_corner -name rc_worst\
+   -cap_table $capTableMax\
+   -pre_route_res 1.34236\
+   -post_route_res 1.34236\
+   -pre_route_cap 1.10066\
+   -post_route_cap 0.960234\
+   -post_route_cross_cap 1.22327\
+   -pre_route_clock_res 0\
+   -pre_route_clock_cap 0\
+   -post_route_clock_cap {0.969117 0 0}\
+   -T 125\
+   -qrc_tech $qxTechFile
+@file 35:
+@file 36:
+@file 37: create_delay_corner -name slow_max\
+   -timing_condition tc_slow\
+   -rc_corner rc_worst
+@file 40: create_delay_corner -name fast_min\
+   -timing_condition tc_fast\
+   -rc_corner rc_best
+@file 43: create_constraint_mode -name functional_func_slow_max\
+   -sdc_files\
+    [list ../synthesis/outputs/${designName}_synth.sdc]
+@file 46: create_analysis_view -name func_slow_max -constraint_mode functional_func_slow_max -delay_corner slow_max
+@file 47: create_analysis_view -name func_fast_min -constraint_mode functional_func_slow_max -delay_corner fast_min
+@file 48: set_analysis_view -setup [list func_slow_max] -hold [list func_fast_min]
+#@ End verbose source /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/scripts/innovus/mmmc45.tcl
+Starting library reading in 'Multi-threaded flow' (with '2' threads)
+
+Threads Configured:2
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_4096X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_4096X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_4096X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_2048X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_2048X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_2048X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib, Line 135)
+**ERROR: (TECHLIB-1197):	The cell 'PADO' on line 142 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 156. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+**ERROR: (TECHLIB-1197):	The cell 'PADI' on line 197 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 204. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADI' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADI' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+**ERROR: (TECHLIB-1197):	The cell 'PADIO' on line 252 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 260. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADIO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADIO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+Read 3 cells in library GPDK_IO.lib.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_512X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_512X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_512X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_136X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_136X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_126X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_128X16_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_128X16_slow.lib, Line 135)
+Read 1 cells in library MEM2_128X16.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_1024X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_1024X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_1024X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_4096X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_4096X32_slow.lib, Line 135)
+Read 1 cells in library MEM1_4096X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_256X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_256X32_slow.lib, Line 135)
+Read 1 cells in library MEM1_256X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_1024X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_1024X32_slow.lib, Line 135)
+Read 1 cells in library MEM1_1024X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/slow.lib.
+Read 477 cells in library gpdk045bc.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_128X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_128X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_128X32.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib.
+Read 1 cells in library sram_32_1024_scl180_max_1p8V_25C_lib.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/riscvCoreSyntaCore1/ramInputs/i2c_top.lib.
+Read 1 cells in library i2c_master_top.
+Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/riscvCoreSyntaCore1/ramInputs/uart.lib.
+Read 1 cells in library uart.
+Library reading multithread flow ended.
+Starting library reading in 'Multi-threaded flow' (with '2' threads)
+
+Threads Configured:2
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib, Line 135)
+**ERROR: (TECHLIB-1197):	The cell 'PADO' on line 142 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 156. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+**ERROR: (TECHLIB-1197):	The cell 'PADI' on line 197 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 204. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADI' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADI' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+**ERROR: (TECHLIB-1197):	The cell 'PADIO' on line 252 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 260. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADIO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+**WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADIO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+Read 3 cells in library GPDK_IO.lib.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_512X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_512X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_512X32.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_4096X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_4096X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_4096X32.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_2048X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_2048X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_2048X32.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_136X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_136X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_126X32.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_128X16_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_128X16_slow.lib, Line 135)
+Read 1 cells in library MEM2_128X16.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_1024X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_1024X32_slow.lib, Line 135)
+Read 1 cells in library MEM2_1024X32.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_4096X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_4096X32_slow.lib, Line 135)
+Read 1 cells in library MEM1_4096X32.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_256X32_slow.lib.
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_256X32_slow.lib, Line 135)
+Read 1 cells in library MEM1_256X32.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_1024X32_slow.lib.
+Message <TECHLIB-1198> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1 cells in library MEM1_1024X32.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/fast.lib.
+**WARN: (TECHLIB-9153):	Duplicate definition for attribute 'dont_use' encountered. The last definition will be retained. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/fast.lib, Line 19302)
+Read 477 cells in library gpdk045wc.
+Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_128X32_slow.lib.
+Read 1 cells in library MEM2_128X32.
+Library reading multithread flow ended.
+@file 41: ###
+@file 42:
+@file 43:
+@file 44: if {$designName == "scr1_pipe_top"} {
+@file 45: lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef
+@file 46: lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lef
+@file 47: lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/uart.lef
+@file 48: }
+@file 49: read_physical -lef $lefFiles
+
+Loading LEF file ../technology/45/lef/gsclib045.fixed2.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file ../technology/45/lef/MEM2_128X32.lef ...
+
+Loading LEF file ../technology/45/lef/MEM1_256X32.lef ...
+
+Loading LEF file ../technology/45/lef/pads.lef ...
+
+Loading LEF file ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef ...
+**ERROR: (IMPLF-82):	The x coordinate value 0.0740
+in pin 'clk0' in macro 'sram_32_1024_scl180' is not on Manufacturing Grid.
+This is likely to result in placement/routing that cannot be manufactured. Check the manufacturing grid defined in the technology LEF file (MANUFACTURINGGRID) and make sure the value is an integral multiple of the grid.
+
+Loading LEF file ../riscvCoreSyntaCore1/ramInputs/i2c_top.lef ...
+
+Loading LEF file ../riscvCoreSyntaCore1/ramInputs/uart.lef ...
+**WARN: (IMPLF-200):	Pin 'sys_clk' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sys_rst' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[13]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[12]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[11]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[10]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[9]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[8]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[7]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[6]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[5]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[4]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[3]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[2]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[1]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_a[0]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_we' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_di[31]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_di[30]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'csr_di[29]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'csr_do[31]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[30]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[29]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[28]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[27]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[26]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[25]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[24]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[23]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[22]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[21]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[20]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[19]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[18]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[17]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[16]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[15]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[14]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[13]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'csr_do[12]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+viaInitial starts at Sun Mar 12 10:36:16 2023
+viaInitial ends at Sun Mar 12 10:36:16 2023
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+@file 50:
+@file 51: read_netlist $init_verilog
+#% Begin Load netlist data ... (date=03/12 10:36:16, mem=969.9M)
+*** Begin netlist parsing (mem=969.9M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'MEM1_256X32' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'MEM1_256X32' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 493 new cells from 27 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/synthesis/outputs/scr1_pipe_top_synth.v'
+
+*** Memory Usage v#1 (Current mem = 986.020M, initial mem = 363.508M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=986.0M) ***
+#% End Load netlist data ... (date=03/12 10:36:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=986.0M, current mem=986.0M)
+Top level cell is scr1_pipe_top.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_4096X32' found in library 'MEM2_4096X32', but missing in library 'MEM2_2048X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_2048X32' found in library 'MEM2_2048X32', but missing in library 'GPDK_IO.lib'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'PADIO' found in library 'GPDK_IO.lib', but missing in library 'MEM2_512X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'PADI' found in library 'GPDK_IO.lib', but missing in library 'MEM2_512X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'PADO' found in library 'GPDK_IO.lib', but missing in library 'MEM2_512X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_512X32' found in library 'MEM2_512X32', but missing in library 'MEM2_126X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_136X32' found in library 'MEM2_126X32', but missing in library 'MEM2_128X16'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_128X16' found in library 'MEM2_128X16', but missing in library 'MEM2_1024X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_1024X32' found in library 'MEM2_1024X32', but missing in library 'MEM1_4096X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM1_4096X32' found in library 'MEM1_4096X32', but missing in library 'MEM1_256X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM1_256X32' found in library 'MEM1_256X32', but missing in library 'MEM1_1024X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM1_1024X32' found in library 'MEM1_1024X32', but missing in library 'gpdk045bc'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'OAI211XL' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'CLKAND2X4' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'SEDFFHQX1' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'EDFFTRX2' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'NOR3X4' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'DFFHQX4' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'CLKMX2X8' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+**WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'XOR3X1' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+Message <TECHLIB-606> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Hooked 983 DB cells to tlib cells.
+** Removed 11 unused lib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell scr1_pipe_top ...
+*** Netlist is unique.
+** info: there are 990 modules.
+** info: there are 3176 stdCell insts.
+** info: there are 10 macros.
+
+*** Memory Usage v#1 (Current mem = 1084.773M, initial mem = 363.508M) ***
+@file 52:
+@file 53: init_design
+Horizontal Layer M1 offset = 190 (derived)
+Vertical Layer M2 offset = 200 (derived)
+Start create_tracks
+Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for pre_route and post_route extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for pre_route and post_route (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File ../technology/45/captbl/worst/capTable ...
+Cap table was created using Encounter 09.12-e135_1.
+Process name: GPDK45.
+**WARN: (IMPEXT-2760):	Layer M10 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2760):	Layer M11 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via Via9 specified in the cap table is ignored because its top layer, M10, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via Via10 specified in the cap table is ignored because its top layer, M11, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M10 is ignored because the layer is not specified in the technology LEF file.
+Reading Capacitance Table File ../technology/45/captbl/best/capTable ...
+Cap table was created using Encounter 09.12-e135_1.
+Process name: GPDK45.
+**WARN: (IMPEXT-2760):	Layer M10 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2760):	Layer M11 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via Via9 specified in the cap table is ignored because its top layer, M10, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via Via10 specified in the cap table is ignored because its top layer, M11, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M10 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_slow_max
+    RC-Corner Name        : rc_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '../technology/45/captbl/worst/capTable'
+    RC-Corner PreRoute Res Factor         : 1.34
+    RC-Corner PreRoute Cap Factor         : 1.1
+    RC-Corner PostRoute Res Factor        : 1.34 {1.34 1 1}
+    RC-Corner PostRoute Cap Factor        : 0.96 {0.96 1 1}
+    RC-Corner PostRoute XCap Factor       : 1.22 {1.22 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1.34	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 0.96	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 0.969 {0.969 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1.34 {1.34 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1.22 {1.22 1 1} 
+    RC-Corner Technology file: '../technology/45/qx/qrcTechFile'
+ 
+ Analysis View: func_fast_min
+    RC-Corner Name        : rc_best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : '../technology/45/captbl/best/capTable'
+    RC-Corner PreRoute Res Factor         : 1.34
+    RC-Corner PreRoute Cap Factor         : 1.1
+    RC-Corner PostRoute Res Factor        : 1.34 {1.34 1 1}
+    RC-Corner PostRoute Cap Factor        : 0.96 {0.96 1 1}
+    RC-Corner PostRoute XCap Factor       : 1.22 {1.22 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1.34	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 0.96	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 0.969 {0.969 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1.34 {1.34 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1.22 {1.22 1 1} 
+    RC-Corner Technology file: '../technology/45/qx/qrcTechFile'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '../synthesis/outputs/scr1_pipe_top_synth.sdc' ...
+Current (total cpu=0:00:19.6, real=0:00:30.0, peak res=1355.0M, current mem=1355.0M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../synthesis/outputs/scr1_pipe_top_synth.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../synthesis/outputs/scr1_pipe_top_synth.sdc, Line 10).
+
+scr1_pipe_top
+INFO (CTE): Reading of timing constraints file ../synthesis/outputs/scr1_pipe_top_synth.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1362.6M, current mem=1362.5M)
+Current (total cpu=0:00:19.7, real=0:00:30.0, peak res=1362.6M, current mem=1362.5M)
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+Total number of combinational cells: 317
+Total number of sequential cells: 150
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFX6
+Total number of usable buffers: 8
+List of unusable buffers: CLKBUFX2 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX3
+Total number of unusable buffers: 8
+List of usable inverters: INVX1 INVX12 INVX2 INVX3 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+Total number of usable inverters: 10
+List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8
+Total number of unusable inverters: 9
+List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+@file 54: create_floorplan -site CoreSite -core_density_size 1 0.7 10 10 10 10
+Adjusting coreMargin bottom  to finFet grid (PlacementGrid) : after adjusting :10.07
+Adjusting coreMargin top     to finFet grid (PlacementGrid) : after adjusting :10.07
+Adjusting core size to PlacementGrid : width :3144.2 height : 3142.98
+Horizontal Layer M1 offset = 190 (derived)
+Vertical Layer M2 offset = 200 (derived)
+Start create_tracks
+Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+@file 55:
+@file 56: read_power_intent -1801 ${powerIntent}
+Reading power intent file /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/synthesis/outputs/scr1_pipe_top_synth1.upf ...
+Checking power intent
+Checking scoped supply_net connected to top-level supply_net
+IEEE1801_RUNTIME: checking scoped supply_net: cpu=0:00:00.00 real=0:00:00.00
+Checking supply_set/supply_net
+IEEE1801_RUNTIME: checking pst supplies: cpu=0:00:00.00 real=0:00:00.00
+Setting boundaryports(3) from port_attr
+IEEE1801_RUNTIME: checking port_attribute: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: checking related_supply_net: cpu=0:00:00.00 real=0:00:00.00
+INFO: The power intent file has only one domain defined.
+Domain-based supply connection will be applied to top cell. Other domain-related power intent commands will be ignored.
+@file 57: commit_power_intent -verbose
+IEEE1801_RUNTIME: freeTimingGraph: cpu=0:00:00.08 real=0:00:00.00
+COMMIT_1801: commit_logic_port_net 
+IEEE1801_RUNTIME: commit_logic_port/net: cpu=0:00:00.00 real=0:00:00.00
+COMMIT_1801: commit_supply_net 
+::MSV::createSupplyPort vss -dir input -type ground
+::MSV::createSupplyPort vdd -dir input -type power
+::MSV::createSupplyNet vdd -type power
+::MSV::createSupplyNet vss -type ground
+IEEE1801_RUNTIME: commit_supply_net: cpu=0:00:00.01 real=0:00:00.00
+COMMIT_1801: commit_power_domain 
+::MSV::createPowerDomain pd_SOC_TOP -default
+::MSV::modifyPowerDomainMember pd_SOC_TOP  -instances * -power { (vdd:VDD)} -ground { (vss:VSS)}
+Total 0 new pin(s) connected to net 'vdd'
+Total 0 new pin(s) connected to net 'vss'
+slow_max fast_min
+IEEE1801_RUNTIME: commit_power_domain: cpu=0:00:00.02 real=0:00:00.00
+COMMIT_1801: commit_global_connect -no_related_pg -check_macro_pg
+globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram1}
+globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram1}
+globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram2}
+globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram2}
+globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram3}
+globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram3}
+globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram4}
+globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram4}
+globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram5}
+globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram5}
+globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram6}
+globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram6}
+globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram7}
+globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram7}
+globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram8}
+globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram8}
+COMMIT_1801: commit_supplynet_connect -check_macro_pg
+IEEE1801_RUNTIME: commit_global_connect: cpu=0:00:00.00 real=0:00:00.00
+::MSV::createSupplySet pd_SOC_TOP_primary_ss_ -power vdd -ground vss
+::MSV::setPowerDomainPGNets pd_SOC_TOP -power vdd -ground vss
+::MSV::addUpfPortState vdd -state { active_state 1 } -state { off_state off } -net vdd
+::MSV::createUpfPst pstSoc -supplies {vdd}
+::MSV::addUpfPstState state1 -pst pstSoc -state {active_state}
+IEEE1801_RUNTIME: commit_power_mode: cpu=0:00:00.00 real=0:00:00.00
+slow_max fast_min
+slow_max fast_min
+::MSV::createSupplySet pd_SOC_TOP_primary_ss_ -power vdd -ground vss
+::MSV::setPowerDomainPGNets pd_SOC_TOP -power vdd -ground vss
+::MSV::setPowerDomainSupplySet pd_SOC_TOP -primary pd_SOC_TOP_primary_ss_
+IEEE1801_RUNTIME: define_low_power_cells: cpu=0:00:00.02 real=0:00:00.00
+Current (total cpu=0:00:20.3, real=0:00:31.0, peak res=1421.6M, current mem=1414.9M)
+scr1_pipe_top
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1415.5M, current mem=1415.5M)
+Current (total cpu=0:00:20.3, real=0:00:31.0, peak res=1421.6M, current mem=1415.5M)
+IEEE1801_RUNTIME: buildTimingGraph: cpu=0:00:00.14 real=0:00:00.00
+IEEE1801_RUNTIME: GNC_connect_existing_iso_shifter: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: connectAlwaysOnBuf: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: replaceAlwaysOnAssignBuffer: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: commit_power_switch: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: commit_retention: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: commit_isolation: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: commit_level_shifter: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: connectAlwaysOnBuf: cpu=0:00:00.00 real=0:00:00.00
+IEEE1801_RUNTIME: initIsoLSNeededBetweenPowerDomains: cpu=0:00:00.00 real=0:00:00.00
+Total number of combinational cells: 317
+Total number of sequential cells: 150
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFX6
+Total number of usable buffers: 8
+List of unusable buffers: CLKBUFX2 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX3
+Total number of unusable buffers: 8
+List of usable inverters: INVX1 INVX12 INVX2 INVX3 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+Total number of usable inverters: 10
+List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8
+Total number of unusable inverters: 9
+List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+check Iso/LS needed between power domains
+finished checking Iso/LS needed between power domains
+finished commitUpf -verbose
+@file 58:
+@file 59: set spareCount 500
+@file 60: if {$designName == "scr1_pipe_top"} {
+@file 61: read_def ../scripts/innovus/coreFP.def
+Reading DEF file '../scripts/innovus/coreFP.def', current time is Sun Mar 12 10:36:18 2023 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+Horizontal Layer M1 offset = 190 (derived)
+Vertical Layer M2 offset = 200 (derived)
+Start create_tracks
+Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+--- DIEAREA (0 0) (6224000 6674320)
+**WARN: (IMPDF-247):	Net 'pipe2imem_cmd_o' specified in Pin 'pipe2imem_cmd_o' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2imem_addr_o[1]' specified in Pin 'pipe2imem_addr_o[1]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2imem_addr_o[0]' specified in Pin 'pipe2imem_addr_o[0]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[31]' specified in Pin 'pipe2dmem_wdata_o[31]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[30]' specified in Pin 'pipe2dmem_wdata_o[30]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[29]' specified in Pin 'pipe2dmem_wdata_o[29]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[28]' specified in Pin 'pipe2dmem_wdata_o[28]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[27]' specified in Pin 'pipe2dmem_wdata_o[27]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[26]' specified in Pin 'pipe2dmem_wdata_o[26]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[25]' specified in Pin 'pipe2dmem_wdata_o[25]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[24]' specified in Pin 'pipe2dmem_wdata_o[24]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[23]' specified in Pin 'pipe2dmem_wdata_o[23]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[22]' specified in Pin 'pipe2dmem_wdata_o[22]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[21]' specified in Pin 'pipe2dmem_wdata_o[21]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[20]' specified in Pin 'pipe2dmem_wdata_o[20]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[19]' specified in Pin 'pipe2dmem_wdata_o[19]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[18]' specified in Pin 'pipe2dmem_wdata_o[18]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[17]' specified in Pin 'pipe2dmem_wdata_o[17]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[16]' specified in Pin 'pipe2dmem_wdata_o[16]' is inconsistent with netlist.
+**WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[15]' specified in Pin 'pipe2dmem_wdata_o[15]' is inconsistent with netlist.
+**WARN: (EMS-27):	Message (IMPDF-247) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+defIn read 10000 lines...
+DEF file '../scripts/innovus/coreFP.def' is parsed, current time is Sun Mar 12 10:36:18 2023.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Updating the floorplan ...
+@file 62: set spareCount 2000
+@file 63: }
+@file 64:
+@file 65: check_power_domains -nets_missing_iso
+Writing nets crossing power domain boundary and needing isolation cell in report file './verifyPDIsoNets'.
+Found 0 net missing required isolation cell
+@file 66: check_power_domains -nets_missing_shifter
+Writing nets crossing power domain boundary and needing shifter cell in report file './verifyPDXNets'.
+Found 0 net missing required shifter
+@file 67:
+@file 68:
+@file 69: ### add tap cells
+@file 70: set TAPCell "TIELO"
+@file 71: catch {add_well_taps -cell ${TAPCell} -cell_interval 28}
+**WARN: (IMPSP-9003):	Cell <'TIELO'>'s may not be a physical ONLY cell - has signal pins
+Multithreaded Timing Analysis is initialized with 2 threads
+
+Estimated cell power/ground rail width = 0.213 um
+For 73801 new insts, *** Applied 4 GNC rules (cpu = 0:00:00.0)
+Inserted 73801 well-taps <TIELO> cells (prefix WELLTAP_pd_SOC_TOP).
+@file 72: catch {add_well_taps -termination_cells TAP_TERMINATION -column_cells ${TAPCell}}
+**WARN: (IMPSP-5123):	Cell TAP_TERMINATION is not found.
+Type 'man IMPSP-5123' for more detail.
+**ERROR: (IMPSP-9093):	Termination cell is not found for adding well tap column termination cells.
+**ERROR: (IMPSP-9092):	Option cell or termination_cell is required for command 'add_well_taps'.
+@file 73:
+@file 74:
+@file 75: ### add port buffers
+@file 76: add_io_buffers -base_name portInBuffers -in_cells BUFX4
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | unconnected nets:      131
+ | signal nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:     3553
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        0
+ +--------------------------------------------------------------
+**INFO: Fewer than half of the nets are detail routed, this design is not in postRoute stage
+attach portInBuffersC_0 (BUFX4) to pipe_rst_n
+attach portInBuffersC_1 (BUFX4) to clk
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2imem_cmd_o' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2imem_addr_o[1]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2imem_addr_o[0]' which has fewer than two connected pins.
+attach portInBuffersC_2 (BUFX4) to imem2pipe_req_ack_i
+attach portInBuffersC_3 (BUFX4) to imem2pipe_rdata_i[31]
+attach portInBuffersC_4 (BUFX4) to imem2pipe_rdata_i[30]
+attach portInBuffersC_5 (BUFX4) to imem2pipe_rdata_i[29]
+attach portInBuffersC_6 (BUFX4) to imem2pipe_rdata_i[28]
+attach portInBuffersC_7 (BUFX4) to imem2pipe_rdata_i[27]
+attach portInBuffersC_8 (BUFX4) to imem2pipe_rdata_i[26]
+attach portInBuffersC_9 (BUFX4) to imem2pipe_rdata_i[25]
+attach portInBuffersC_10 (BUFX4) to imem2pipe_rdata_i[24]
+attach portInBuffersC_11 (BUFX4) to imem2pipe_rdata_i[23]
+attach portInBuffersC_12 (BUFX4) to imem2pipe_rdata_i[22]
+attach portInBuffersC_13 (BUFX4) to imem2pipe_rdata_i[21]
+attach portInBuffersC_14 (BUFX4) to imem2pipe_rdata_i[20]
+attach portInBuffersC_15 (BUFX4) to imem2pipe_rdata_i[19]
+attach portInBuffersC_16 (BUFX4) to imem2pipe_rdata_i[18]
+attach portInBuffersC_17 (BUFX4) to imem2pipe_rdata_i[17]
+attach portInBuffersC_18 (BUFX4) to imem2pipe_rdata_i[16]
+attach portInBuffersC_19 (BUFX4) to imem2pipe_rdata_i[15]
+attach portInBuffersC_20 (BUFX4) to imem2pipe_rdata_i[14]
+attach portInBuffersC_21 (BUFX4) to imem2pipe_rdata_i[13]
+attach portInBuffersC_22 (BUFX4) to imem2pipe_rdata_i[12]
+attach portInBuffersC_23 (BUFX4) to imem2pipe_rdata_i[11]
+attach portInBuffersC_24 (BUFX4) to imem2pipe_rdata_i[10]
+attach portInBuffersC_25 (BUFX4) to imem2pipe_rdata_i[9]
+attach portInBuffersC_26 (BUFX4) to imem2pipe_rdata_i[8]
+attach portInBuffersC_27 (BUFX4) to imem2pipe_rdata_i[7]
+attach portInBuffersC_28 (BUFX4) to imem2pipe_rdata_i[6]
+attach portInBuffersC_29 (BUFX4) to imem2pipe_rdata_i[5]
+attach portInBuffersC_30 (BUFX4) to imem2pipe_rdata_i[4]
+attach portInBuffersC_31 (BUFX4) to imem2pipe_rdata_i[3]
+attach portInBuffersC_32 (BUFX4) to imem2pipe_rdata_i[2]
+attach portInBuffersC_33 (BUFX4) to imem2pipe_rdata_i[1]
+attach portInBuffersC_34 (BUFX4) to imem2pipe_rdata_i[0]
+attach portInBuffersC_35 (BUFX4) to imem2pipe_resp_i[1]
+attach portInBuffersC_36 (BUFX4) to imem2pipe_resp_i[0]
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[31]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[30]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[29]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[28]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[27]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[26]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[25]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[24]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[23]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[22]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[21]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[20]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[19]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[18]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[17]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[16]' which has fewer than two connected pins.
+**WARN: (IMPOPT-3314):	Skipping net 'pipe2dmem_wdata_o[15]' which has fewer than two connected pins.
+**WARN: (EMS-27):	Message (IMPOPT-3314) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+attach portInBuffersC_37 (BUFX4) to dmem2pipe_req_ack_i
+attach portInBuffersC_38 (BUFX4) to dmem2pipe_rdata_i[31]
+attach portInBuffersC_39 (BUFX4) to dmem2pipe_rdata_i[30]
+attach portInBuffersC_40 (BUFX4) to dmem2pipe_rdata_i[29]
+attach portInBuffersC_41 (BUFX4) to dmem2pipe_rdata_i[28]
+attach portInBuffersC_42 (BUFX4) to dmem2pipe_rdata_i[27]
+attach portInBuffersC_43 (BUFX4) to dmem2pipe_rdata_i[26]
+attach portInBuffersC_44 (BUFX4) to dmem2pipe_rdata_i[25]
+attach portInBuffersC_45 (BUFX4) to dmem2pipe_rdata_i[24]
+attach portInBuffersC_46 (BUFX4) to dmem2pipe_rdata_i[23]
+attach portInBuffersC_47 (BUFX4) to dmem2pipe_rdata_i[22]
+attach portInBuffersC_48 (BUFX4) to dmem2pipe_rdata_i[21]
+attach portInBuffersC_49 (BUFX4) to dmem2pipe_rdata_i[20]
+attach portInBuffersC_50 (BUFX4) to dmem2pipe_rdata_i[19]
+attach portInBuffersC_51 (BUFX4) to dmem2pipe_rdata_i[18]
+attach portInBuffersC_52 (BUFX4) to dmem2pipe_rdata_i[17]
+attach portInBuffersC_53 (BUFX4) to dmem2pipe_rdata_i[16]
+attach portInBuffersC_54 (BUFX4) to dmem2pipe_rdata_i[15]
+attach portInBuffersC_55 (BUFX4) to dmem2pipe_rdata_i[14]
+attach portInBuffersC_56 (BUFX4) to dmem2pipe_rdata_i[13]
+attach portInBuffersC_57 (BUFX4) to dmem2pipe_rdata_i[12]
+attach portInBuffersC_58 (BUFX4) to dmem2pipe_rdata_i[11]
+attach portInBuffersC_59 (BUFX4) to dmem2pipe_rdata_i[10]
+attach portInBuffersC_60 (BUFX4) to dmem2pipe_rdata_i[9]
+attach portInBuffersC_61 (BUFX4) to dmem2pipe_rdata_i[8]
+attach portInBuffersC_62 (BUFX4) to dmem2pipe_rdata_i[7]
+attach portInBuffersC_63 (BUFX4) to dmem2pipe_rdata_i[6]
+attach portInBuffersC_64 (BUFX4) to dmem2pipe_rdata_i[5]
+attach portInBuffersC_65 (BUFX4) to dmem2pipe_rdata_i[4]
+attach portInBuffersC_66 (BUFX4) to dmem2pipe_rdata_i[3]
+attach portInBuffersC_67 (BUFX4) to dmem2pipe_rdata_i[2]
+attach portInBuffersC_68 (BUFX4) to dmem2pipe_rdata_i[1]
+attach portInBuffersC_69 (BUFX4) to dmem2pipe_rdata_i[0]
+attach portInBuffersC_70 (BUFX4) to dmem2pipe_resp_i[1]
+attach portInBuffersC_71 (BUFX4) to dmem2pipe_resp_i[0]
+*** Starting place_detail (0:00:24.6 mem=1688.9M) ***
+Move report: Detail placement moves 2863 insts, mean move: 0.46 um, max move: 38.79 um 
+	Max move on inst (g55895): (1785.20, 2966.66) --> (1823.80, 2966.47)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:01.0 MEM: 1698.8MB
+Summary Report:
+Instances move: 2863 (out of 2863 movable)
+Instances flipped: 0
+Mean displacement: 0.46 um
+Max displacement: 38.79 um (Instance: g55895) (1785.2, 2966.66) -> (1823.8, 2966.47)
+	Length: 7 sites, height: 1 rows, site name: CoreSite, cell type: OAI31XL
+	Violation at original loc: Placement Blockage Violation
+Runtime: CPU: 0:00:00.3 REAL: 0:00:01.0 MEM: 1698.9MB
+*** Finished place_detail (0:00:24.9 mem=1698.9M) ***
+@file 77: add_io_buffers -base_name portOutBuffers -out_cells  BUFX4
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | unconnected nets:      131
+ | signal nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:     3625
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        0
+ +--------------------------------------------------------------
+**INFO: Fewer than half of the nets are detail routed, this design is not in postRoute stage
+attach portOutBuffersC_0 (BUFX4) to pipe2imem_req_o
+attach portOutBuffersC_1 (BUFX4) to pipe2imem_addr_o[31]
+attach portOutBuffersC_2 (BUFX4) to pipe2imem_addr_o[30]
+attach portOutBuffersC_3 (BUFX4) to pipe2imem_addr_o[29]
+attach portOutBuffersC_4 (BUFX4) to pipe2imem_addr_o[28]
+attach portOutBuffersC_5 (BUFX4) to pipe2imem_addr_o[27]
+attach portOutBuffersC_6 (BUFX4) to pipe2imem_addr_o[26]
+attach portOutBuffersC_7 (BUFX4) to pipe2imem_addr_o[25]
+attach portOutBuffersC_8 (BUFX4) to pipe2imem_addr_o[24]
+attach portOutBuffersC_9 (BUFX4) to pipe2imem_addr_o[23]
+attach portOutBuffersC_10 (BUFX4) to pipe2imem_addr_o[22]
+attach portOutBuffersC_11 (BUFX4) to pipe2imem_addr_o[21]
+attach portOutBuffersC_12 (BUFX4) to pipe2imem_addr_o[20]
+attach portOutBuffersC_13 (BUFX4) to pipe2imem_addr_o[19]
+attach portOutBuffersC_14 (BUFX4) to pipe2imem_addr_o[18]
+attach portOutBuffersC_15 (BUFX4) to pipe2imem_addr_o[17]
+attach portOutBuffersC_16 (BUFX4) to pipe2imem_addr_o[16]
+attach portOutBuffersC_17 (BUFX4) to pipe2imem_addr_o[15]
+attach portOutBuffersC_18 (BUFX4) to pipe2imem_addr_o[14]
+attach portOutBuffersC_19 (BUFX4) to pipe2imem_addr_o[13]
+attach portOutBuffersC_20 (BUFX4) to pipe2imem_addr_o[12]
+attach portOutBuffersC_21 (BUFX4) to pipe2imem_addr_o[11]
+attach portOutBuffersC_22 (BUFX4) to pipe2imem_addr_o[10]
+attach portOutBuffersC_23 (BUFX4) to pipe2imem_addr_o[9]
+attach portOutBuffersC_24 (BUFX4) to pipe2imem_addr_o[8]
+attach portOutBuffersC_25 (BUFX4) to pipe2imem_addr_o[7]
+attach portOutBuffersC_26 (BUFX4) to pipe2imem_addr_o[6]
+attach portOutBuffersC_27 (BUFX4) to pipe2imem_addr_o[5]
+attach portOutBuffersC_28 (BUFX4) to pipe2imem_addr_o[4]
+attach portOutBuffersC_29 (BUFX4) to pipe2imem_addr_o[3]
+attach portOutBuffersC_30 (BUFX4) to pipe2imem_addr_o[2]
+attach portOutBuffersC_31 (BUFX4) to pipe2dmem_req_o
+**ERROR: (IMPOPT-6217):	Net '' is a multi-driver net, and cannot be buffered by 'attachIOBuffer' command.
+attach portOutBuffersC_32 (BUFX4) to pipe2dmem_width_o[1]
+attach portOutBuffersC_33 (BUFX4) to pipe2dmem_width_o[0]
+attach portOutBuffersC_34 (BUFX4) to pipe2dmem_addr_o[31]
+attach portOutBuffersC_35 (BUFX4) to pipe2dmem_addr_o[30]
+attach portOutBuffersC_36 (BUFX4) to pipe2dmem_addr_o[29]
+attach portOutBuffersC_37 (BUFX4) to pipe2dmem_addr_o[28]
+attach portOutBuffersC_38 (BUFX4) to pipe2dmem_addr_o[27]
+attach portOutBuffersC_39 (BUFX4) to pipe2dmem_addr_o[26]
+attach portOutBuffersC_40 (BUFX4) to pipe2dmem_addr_o[25]
+attach portOutBuffersC_41 (BUFX4) to pipe2dmem_addr_o[24]
+attach portOutBuffersC_42 (BUFX4) to pipe2dmem_addr_o[23]
+attach portOutBuffersC_43 (BUFX4) to pipe2dmem_addr_o[22]
+attach portOutBuffersC_44 (BUFX4) to pipe2dmem_addr_o[21]
+attach portOutBuffersC_45 (BUFX4) to pipe2dmem_addr_o[20]
+attach portOutBuffersC_46 (BUFX4) to pipe2dmem_addr_o[19]
+attach portOutBuffersC_47 (BUFX4) to pipe2dmem_addr_o[18]
+attach portOutBuffersC_48 (BUFX4) to pipe2dmem_addr_o[17]
+attach portOutBuffersC_49 (BUFX4) to pipe2dmem_addr_o[16]
+attach portOutBuffersC_50 (BUFX4) to pipe2dmem_addr_o[15]
+attach portOutBuffersC_51 (BUFX4) to pipe2dmem_addr_o[14]
+attach portOutBuffersC_52 (BUFX4) to pipe2dmem_addr_o[13]
+attach portOutBuffersC_53 (BUFX4) to pipe2dmem_addr_o[12]
+attach portOutBuffersC_54 (BUFX4) to pipe2dmem_addr_o[11]
+attach portOutBuffersC_55 (BUFX4) to pipe2dmem_addr_o[10]
+attach portOutBuffersC_56 (BUFX4) to pipe2dmem_addr_o[9]
+attach portOutBuffersC_57 (BUFX4) to pipe2dmem_addr_o[8]
+attach portOutBuffersC_58 (BUFX4) to pipe2dmem_addr_o[7]
+attach portOutBuffersC_59 (BUFX4) to pipe2dmem_addr_o[6]
+attach portOutBuffersC_60 (BUFX4) to pipe2dmem_addr_o[5]
+attach portOutBuffersC_61 (BUFX4) to pipe2dmem_addr_o[4]
+attach portOutBuffersC_62 (BUFX4) to pipe2dmem_addr_o[3]
+attach portOutBuffersC_63 (BUFX4) to pipe2dmem_addr_o[2]
+attach portOutBuffersC_64 (BUFX4) to pipe2dmem_addr_o[1]
+attach portOutBuffersC_65 (BUFX4) to pipe2dmem_addr_o[0]
+*** Starting place_detail (0:00:26.6 mem=1681.6M) ***
+Move report: Detail placement moves 66 insts, mean move: 0.60 um, max move: 0.60 um 
+	Max move on inst (portOutBuffersC_65): (3090.60, 1885.75) --> (3090.00, 1885.75)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 1692.5MB
+Summary Report:
+Instances move: 66 (out of 2929 movable)
+Instances flipped: 0
+Mean displacement: 0.60 um
+Max displacement: 0.60 um (Instance: portOutBuffersC_65) (3090.6, 1885.75) -> (3090, 1885.75)
+	Length: 7 sites, height: 1 rows, site name: CoreSite, cell type: BUFX4
+	Violation at original loc: Placement Blockage Violation
+Runtime: CPU: 0:00:00.3 REAL: 0:00:00.0 MEM: 1692.5MB
+*** Finished place_detail (0:00:26.9 mem=1692.5M) ***
+@file 78:
+@file 79:
+@file 80: ### adding spare cells
+@file 81:
+@file 82: set spareList "NAND2X6 NAND2X4 NOR2X4 NOR2X6 DFFQX4 DFFQX2 BUFX3 BUFX6 INVX4 INVX16"
+@file 83:
+@file 84: create_spare_module -cells $spareList -module_name spareMod
+@file 85: place_spare_modules   -module_name spareMod -num_modules $spareCount
+Info: Power domain is not defined, option -ignorePDBox will not work!
+**WARN: (IMPDB-2078):	Output pin wb_inta_o of instance i2c_master_top_inst1 is connected to ground net vss.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin wb_inta_o of instance i2c_master_top_inst1 is connected to ground net vss.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin wb_inta_o of instance i2c_master_top_inst1 is connected to ground net vss.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin wb_inta_o of instance i2c_master_top_inst1 is connected to ground net vss.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin wb_inta_o of instance i2c_master_top_inst1 is connected to ground net vss.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin wb_inta_o of instance i2c_master_top_inst1 is connected to ground net vss.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin wb_inta_o of instance i2c_master_top_inst1 is connected to ground net vss.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+*** Checked 20 GNC rules.
+*** Applying global-net connections...
+**WARN: (IMPDB-2078):	Output pin wb_inta_o of instance i2c_master_top_inst1 is connected to ground net pipe2imem_cmd_o.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+*** Applied 20 GNC rules (cpu = 0:00:00.0)
+Current (total cpu=0:00:29.9, real=0:00:39.0, peak res=1736.9M, current mem=1648.8M)
+scr1_pipe_top
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1649.4M, current mem=1649.4M)
+Current (total cpu=0:00:30.0, real=0:00:39.0, peak res=1736.9M, current mem=1649.4M)
+ECO placed 20385 instances (385 connected + 20000 unconnected).
+
+
+
+*** Starting place_detail (0:00:32.5 mem=1694.5M) ***
+Total net bbox length = 9.286e+05 (4.675e+05 4.611e+05) (ext = 5.626e+03)
+Move report: Detail placement moves 1684 insts, mean move: 1.74 um, max move: 8.53 um 
+	Max move on inst (g55402__6783): (1433.40, 2591.98) --> (1430.00, 2586.85)
+	Runtime: CPU: 0:00:14.4 REAL: 0:00:15.0 MEM: 1774.1MB
+Summary Report:
+Instances move: 1684 (out of 23314 movable)
+Instances flipped: 0
+Mean displacement: 1.74 um
+Max displacement: 8.53 um (Instance: g55402__6783) (1433.4, 2591.98) -> (1430, 2586.85)
+	Length: 8 sites, height: 1 rows, site name: CoreSite, cell type: AO22XL
+Total net bbox length = 9.297e+05 (4.679e+05 4.618e+05) (ext = 5.628e+03)
+Runtime: CPU: 0:00:14.6 REAL: 0:00:15.0 MEM: 1774.1MB
+*** Finished place_detail (0:00:47.1 mem=1774.1M) ***
+*INFO: Total number of spare module instances added: 2000
+@file 86:
+@file 87: #foreach cel $spareList {
+@file 88: #reset_spare_insts -cell $cel
+@file 89: #set_spare_insts -cell $cel
+@file 90: #}
+@file 91:
+@file 92:
+@file 93: write_db setupComplete.inn
+tc_fast tc_slow
+#% Begin save design ... (date=03/12 10:36:43, mem=1710.4M)
+% Begin Save ccopt configuration ... (date=03/12 10:36:43, mem=1710.4M)
+% End Save ccopt configuration ... (date=03/12 10:36:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=1712.2M, current mem=1712.2M)
+% Begin Save netlist data ... (date=03/12 10:36:43, mem=1712.3M)
+Writing Binary DB to setupComplete.inn.tmp/vbin/scr1_pipe_top.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=03/12 10:36:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=1712.4M, current mem=1712.4M)
+Saving symbol-table file ...
+Saving congestion map file setupComplete.inn.tmp/scr1_pipe_top.route.congmap.gz ...
+% Begin Save AAE data ... (date=03/12 10:36:44, mem=1713.3M)
+Saving AAE Data ...
+% End Save AAE data ... (date=03/12 10:36:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1713.3M, current mem=1713.3M)
+Saving preference file setupComplete.inn.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving root attributes to be loaded post write_db ...
+Saving global file ...
+Saving root attributes to be loaded previous write_db ...
+% Begin Save floorplan data ... (date=03/12 10:36:46, mem=1718.4M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=03/12 10:36:47, total cpu=0:00:00.0, real=0:00:01.0, peak res=1718.6M, current mem=1718.6M)
+Saving PG file setupComplete.inn.tmp/scr1_pipe_top.pg.gz, version#2, (Created by Innovus v21.14-e032_1 on Sun Mar 12 10:36:47 2023)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1720.1M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=03/12 10:36:48, mem=1719.0M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=03/12 10:36:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1719.1M, current mem=1719.1M)
+% Begin Save routing data ... (date=03/12 10:36:48, mem=1719.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1720.1M) ***
+% End Save routing data ... (date=03/12 10:36:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1719.1M, current mem=1719.1M)
+Saving property file setupComplete.inn.tmp/scr1_pipe_top.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1719.7M) ***
+Saving power intent database ...
+slow_max fast_min
+% Begin Save power constraints data ... (date=03/12 10:36:49, mem=1720.5M)
+% End Save power constraints data ... (date=03/12 10:36:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1720.9M, current mem=1720.9M)
+rc_best rc_worst
+rc_best rc_worst
+rc_best rc_worst
+rc_best rc_worst
+rc_best rc_worst
+Generated self-contained design setupComplete.inn.tmp
+#% End save design ... (date=03/12 10:36:49, total cpu=0:00:01.3, real=0:00:06.0, peak res=1722.4M, current mem=1722.4M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+@file 94:
+@file 95: exit
+
+*** Memory Usage v#1 (Current mem = 1722.531M, initial mem = 363.508M) ***
+*** Message Summary: 3281 warning(s), 32 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:48.5, real=0:01:02, mem=1722.5M) ---

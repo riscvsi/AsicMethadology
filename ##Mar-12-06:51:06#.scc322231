@@ -1,0 +1,8 @@
++-----------------------------------------------------------------------------+
+| Logfile        : ##Mar-12-06:51:06#.scc322231                               |
+| Job id         : 860608272762036            Class: (SLES12SP5&&CPUMhz>3199&&64G&&1C) && (!HIGHMEM) Qslot: /CHG/MeteorLake|
+| Executed on    : scc322231                  Pool : zsc3_nb2_ppm             |
+| Queueing time  : Sun Mar 12 06:51:00 2023                                   |
+| Starting time  : Sun Mar 12 06:51:06 2023          Qwait:   0h:00m:06s      |
+| Command        : xterm -T PnR                                               |
++-----------------------------------------------------------------------------+

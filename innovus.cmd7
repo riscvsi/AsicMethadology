@@ -1,0 +1,41 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Mar 12 10:47:05 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.14-e032_1 (64bit) 03/17/2022 14:36 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.14-e032_1 NR220313-0334/21_14-UB (database version 18.20.575) {superthreading v2.17}
+#@(#)CDS: AAE 21.14-s009 (64bit) 03/17/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.14-s009_1 () Mar 16 2022 09:19:41 ( )
+#@(#)CDS: SYNTECH 21.14-s004_1 () Mar  9 2022 01:22:32 ( )
+#@(#)CDS: CPE v21.14-s020
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s656 (64bit) Tue Nov 9 23:11:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+#@ source scripts/innovus/placement.tcl
+#@ Begin verbose source (pre): source scripts/innovus/placement.tcl
+#@ source setup.tcl
+#@ Begin verbose source setup.tcl (pre)
+set  designName  "scr1_pipe_top" 
+set  technology  "45"
+set  RTLFile  "../riscvCoreSyntaCore1/src/includes/scr1_ahb.svh ../riscvCoreSyntaCore1/src/includes/scr1_arch_description.svh ../riscvCoreSyntaCore1/src/includes/scr1_arch_types.svh ../riscvCoreSyntaCore1/src/includes/scr1_csr.svh ../riscvCoreSyntaCore1/src/includes/scr1_dm.svh ../riscvCoreSyntaCore1/src/includes/scr1_hdu.svh ../riscvCoreSyntaCore1/src/includes/scr1_ipic.svh ../riscvCoreSyntaCore1/src/includes/scr1_memif.svh ../riscvCoreSyntaCore1/src/includes/scr1_riscv_isa_decoding.svh ../riscvCoreSyntaCore1/src/includes/scr1_scu.svh ../riscvCoreSyntaCore1/src/includes/scr1_search_ms1.svh ../riscvCoreSyntaCore1/src/includes/scr1_tapc.svh ../riscvCoreSyntaCore1/src/includes/scr1_tdu.svh ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_exu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_ialu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_idu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_ifu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_lsu.sv ../riscvCoreSyntaCore1/src/core/pipset  sdcFile  "../riscvCoreSyntaCore1/constraints/scr1_pipe_top.sdc" 
+set  effort  "medium" 
+set  libFiles  "../technology/${technology}/lib/max/MEM2_4096X32_slow.lib ../technology/${technology}/lib/max/MEM2_2048X32_slow.lib ../technology/${technology}/lib/max/pdkIO.lib ../technology/${technology}/lib/max/MEM2_512X32_slow.lib ../technology/${technology}/lib/max/MEM2_136X32_slow.lib ../technology/${technology}/lib/max/MEM2_128X16_slow.lib ../technology/${technology}/lib/max/MEM2_1024X32_slow.lib ../technology/${technology}/lib/max/MEM1_4096X32_slow.lib ../technology/${technology}/lib/max/MEM1_256X32_slow.lib ../technology/${technology}/lib/max/MEM1_1024X32_slow.lib ../technology/${technology}/lib/max/slow.lib ../technology/${technology}/lib/max/MEM2_128X32_slow.lib" 
+set  libMinFiles  "../technology/${technology}/lib/min/pdkIO.lib ../technology/${technology}/lib/min/MEM2_512X32_slow.lib ../technology/${technology}/lib/min/MEM2_4096X32_slow.lib ../technology/${technology}/lib/min/MEM2_2048X32_slow.lib ../technology/${technology}/lib/min/MEM2_136X32_slow.lib ../technology/${technology}/lib/min/MEM2_128X16_slow.lib ../technology/${technology}/lib/min/MEM2_1024X32_slow.lib ../technology/${technology}/lib/min/MEM1_4096X32_slow.lib ../technology/${technology}/lib/min/MEM1_256X32_slow.lib ../technology/${technology}/lib/min/MEM1_1024X32_slow.lib ../technology/${technology}/lib/min/fast.lib ../technology/${technology}/lib/min/MEM2_128X32_slow.lib" 
+set  lefFiles  "../technology/${technology}/lef/gsclib045.fixed2.lef ../technology/${technology}/lef/MEM2_128X32.lef ../technology/${technology}/lef/MEM1_256X32.lef ../technology/${technology}/lef/pads.lef" 
+set  capTableMin  "../technology/${technology}/captbl/best/capTable" 
+set  capTableMax  "../technology/${technology}/captbl/worst/capTable" 
+set  qxMapFile  "../technology/${technology}/qx/mapFile" 
+set  qxTechFile  "../technology/${technology}/qx/qrcTechFile" 
+set  qxConfFile  "../technology/${technology}/qx/qrc.conf" 
+#@ End verbose source setup.tcl
+set pnrDir "pnr"
+if {![file exists $pnrDir]} {...}
+catch {cd $pnrDir}
+read_db powermeshCompleted.inn
+set_db design_process_node 45
+set_multi_cpu_usage -local_cpu 16
+set_db timing_analysis_type ocv 
+set_db timing_analysis_cppr both
+place_opt_design

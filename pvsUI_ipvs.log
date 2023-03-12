@@ -1,0 +1,6 @@
+pvsgui:   ERROR: The command /p/gtkit/tools/eda_tools/pvs/pvs_19_12_s008/share/oa/bin/sysname returned an error status:
+                            unknown
+pvsgui:    INFO: Note that OpenAccess (OA) requires running the Configure phase.
+pvsgui:          See the "OpenAccess Installation and Configuration Guide" before
+pvsgui:          you complete the configuration step. This manual is included with
+pvsgui:          the Cadence product documentation.

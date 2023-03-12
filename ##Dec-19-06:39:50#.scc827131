@@ -1,0 +1,20 @@
++-----------------------------------------------------------------------------+
+| Logfile        : ##Dec-19-06:39:50#.scc827131                               |
+| Job id         : 57391710                   Class: (SLES12SP5&&CPUMhz>3199&&64G&&1C) && (!HIGHMEM) Qslot: /CHG/MeteorLake|
+| Executed on    : scc827131                  Pool : zsc3_nb2_ppm             |
+| Queueing time  : Mon Dec 19 06:39:46 2022                                   |
+| Starting time  : Mon Dec 19 06:39:50 2022          Qwait:   0h:00m:04s      |
+| Command        : xterm -T learnCadence                                      |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+| Exit Status    : -3002                                                      |
+  NB: The Job has exceeded its execution limit (i.e., it has run for longer than the specified time limit)
+| Finishing time : Wed Dec 21 06:39:52 2022                                   |
+| CPU time       : Usr 2904.14s Sys 1460.08s WC  48h:00m:02s                     |
+| Rusage Stats   : Mem:1358   PF:  2292141/18CSv/f:  0/0     Swaps:0          |
+|                :           Msg:    0/0     IOops:  3440/16 Sigs :0          |
+| User Groups    : shdk73, gt1274, soc, skl_rtl, dgn7fe, dgn7, n5, dgn5,      |
+|                : dgn5fe, dgp, n5fe, n5p, n3, dgn3, gcp, c2dgusers,          |
+|                : intelall, n3e, n4p, elsx2die, datools, socrtl, soc73proc,    |
+|                : hdk10nmproc                                                |
++-----------------------------------------------------------------------------+

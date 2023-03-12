@@ -1,0 +1,23 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Mar 12 10:37:23 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.14-e032_1 (64bit) 03/17/2022 14:36 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.14-e032_1 NR220313-0334/21_14-UB (database version 18.20.575) {superthreading v2.17}
+#@(#)CDS: AAE 21.14-s009 (64bit) 03/17/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.14-s009_1 () Mar 16 2022 09:19:41 ( )
+#@(#)CDS: SYNTECH 21.14-s004_1 () Mar  9 2022 01:22:32 ( )
+#@(#)CDS: CPE v21.14-s020
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s656 (64bit) Tue Nov 9 23:11:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+open_db pnr/setupComplete.inn
+read_db pnr/setupComplete.inn
+gui_select -point {2237.73400 713.01100}
+gui_select -point {1116.64250 296.02000}
+gui_select -point {2429.14000 466.91800}
+gui_select -point {2442.81200 425.90250}
+gui_select -point {651.80000 405.39450}
+exit

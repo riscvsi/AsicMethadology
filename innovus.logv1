@@ -1,0 +1,1042 @@
+[03/12 10:34:22      0s] 
+[03/12 10:34:22      0s] Cadence Innovus(TM) Implementation System.
+[03/12 10:34:22      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/12 10:34:22      0s] 
+[03/12 10:34:22      0s] Version:	v21.14-e032_1, built Thu Mar 17 14:36:51 PDT 2022
+[03/12 10:34:22      0s] Options:	-stylus -file scripts/innovus/floorplan.tcl 
+[03/12 10:34:22      0s] Date:		Sun Mar 12 10:34:18 2023
+[03/12 10:34:22      0s] Host:		scc322231 (x86_64 w/Linux 4.12.14-122.136-default) (6cores*6cpus*Intel(R) Xeon(R) E-2236 CPU @ 3.40GHz 12288KB)
+[03/12 10:34:22      0s] OS:		SUSE Linux Enterprise Server 12 (x86_64)
+[03/12 10:34:22      0s] 
+[03/12 10:34:22      0s] License:
+[03/12 10:34:22      0s] 		[10:34:18.493457] Configured Lic search path (20.02-s004): 5280@cadence22p.elic.intel.com:5280@cadence20p.elic.intel.com:5280@cadence24p.elic.intel.com:5280@cadence17b.elic.intel.com:5280@cadence01p.elic.intel.com:5280@cadence02p.elic.intel.com:5280@cadence39p.elic.intel.com:5280@cadence47p.elic.intel.com:5280@ca
+[03/12 10:34:22      0s] 
+[03/12 10:34:22      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[03/12 10:34:22      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[03/12 10:34:29      6s] 
+[03/12 10:34:29      6s] ***************************************************************************************
+[03/12 10:34:29      6s] WARNING: R&D BUILD - use only as directed by your Cadence support team.
+[03/12 10:34:29      6s] INFO:    The prefix [DEV] has been added to the prompt as a reminder of that situation.
+[03/12 10:34:29      6s] ***************************************************************************************
+[03/12 10:34:29      6s] 
+[03/12 10:34:35      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.14-e032_1 (64bit) 03/17/2022 14:36 (Linux 3.10.0-693.el7.x86_64)
+[03/12 10:34:38     11s] @(#)CDS: NanoRoute 21.14-e032_1 NR220313-0334/21_14-UB (database version 18.20.575) {superthreading v2.17}
+[03/12 10:34:38     11s] @(#)CDS: AAE 21.14-s009 (64bit) 03/17/2022 (Linux 3.10.0-693.el7.x86_64)
+[03/12 10:34:38     11s] @(#)CDS: CTE 21.14-s009_1 () Mar 16 2022 09:19:41 ( )
+[03/12 10:34:38     11s] @(#)CDS: SYNTECH 21.14-s004_1 () Mar  9 2022 01:22:32 ( )
+[03/12 10:34:38     11s] @(#)CDS: CPE v21.14-s020
+[03/12 10:34:38     11s] @(#)CDS: IQuantus/TQuantus 20.1.2-s656 (64bit) Tue Nov 9 23:11:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[03/12 10:34:38     11s] @(#)CDS: OA 22.60-p067 Fri Jan 14 12:14:46 2022
+[03/12 10:34:38     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[03/12 10:34:38     11s] @(#)CDS: RCDB 11.15.0
+[03/12 10:34:38     11s] @(#)CDS: STYLUS 21.12-s006_1 (03/07/2022 03:43 PST)
+[03/12 10:34:38     11s] 
+[03/12 10:34:38     11s] 
+[03/12 10:34:38     11s] ***********************************************************************************************************
+[03/12 10:34:38     11s] This build has not been tested or validated. Limit usage to validating specific bug fixes or enhancements.
+[03/12 10:34:38     11s] Need to migrate to next available yellow version as soon as it is available.
+[03/12 10:34:38     11s] This engineering build is for use by Intel for the LNL project.
+[03/12 10:34:38     11s] It should not be used for other purposes.
+[03/12 10:34:38     11s] This build will expire on 7/31/2023
+[03/12 10:34:38     11s] ***********************************************************************************************************
+[03/12 10:34:38     11s] 
+[03/12 10:34:38     11s] 
+[03/12 10:34:38     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_31270_scc322231_rcg_IfzqLa.
+
+[03/12 10:34:38     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_31270_scc322231_rcg_IfzqLa.
+[03/12 10:34:38     11s] 
+[03/12 10:34:38     11s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[03/12 10:34:41     12s] [INFO] Loading PVS  fill procedures
+[03/12 10:34:42     13s] 
+[03/12 10:34:42     13s] **INFO:  MMMC transition support version v31-84 
+[03/12 10:34:42     13s] 
+[03/12 10:34:44     15s] #@ Processing -files option
+[03/12 10:34:44     15s] @[DEV]innovus 1> source scripts/innovus/floorplan.tcl
+[03/12 10:34:44     15s] #@ Begin verbose source (pre): source scripts/innovus/floorplan.tcl
+[03/12 10:34:44     15s] @file 1:
+[03/12 10:34:44     15s] @file 2: source setup.tcl
+[03/12 10:34:44     15s] #@ Begin verbose source setup.tcl (pre)
+[03/12 10:34:44     15s] @file 1: set  designName  "scr1_pipe_top" 
+[03/12 10:34:44     15s] @file 2: set  technology  "45"
+[03/12 10:34:44     15s] @file 3: set  RTLFile  "../riscvCoreSyntaCore1/src/includes/scr1_ahb.svh ../riscvCoreSyntaCore1/src/includes/scr1_arch_description.svh ../riscvCoreSyntaCore1/src/includes/scr1_arch_types.svh ../riscvCoreSyntaCore1/src/includes/scr1_csr.svh ../riscvCoreSyntaCore1/src/includes/scr1_dm.svh ../riscvCoreSyntaCore1/src/includes/scr1_hdu.svh ../riscvCoreSyntaCore1/src/includes/scr1_ipic.svh ../riscvCoreSyntaCore1/src/includes/scr1_memif.svh ../riscvCoreSyntaCore1/src/includes/scr1_riscv_isa_decoding.svh ../riscvCoreSyntaCore1/src/includes/scr1_scu.svh ../riscvCoreSyntaCore1/src/includes/scr1_search_ms1.svh ../riscvCoreSyntaCore1/src/includes/scr1_tapc.svh ../riscvCoreSyntaCore1/src/includes/scr1_tdu.svh ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_exu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_ialu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_idu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_ifu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_lsu.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_mprf.sv ../riscvCoreSyntaCore1/src/core/pipeline/scr1_pipe_top.sv ../riscvCoreSyntaCore1/src/core/scr1_core_top.sv" 
+[03/12 10:34:44     15s] @file 4: set  sdcFile  "../riscvCoreSyntaCore1/constraints/scr1_pipe_top.sdc" 
+[03/12 10:34:44     15s] @file 5: set  effort  "medium" 
+[03/12 10:34:44     15s] @file 6: set  libFiles  "../technology/${technology}/lib/max/MEM2_4096X32_slow.lib ../technology/${technology}/lib/max/MEM2_2048X32_slow.lib ../technology/${technology}/lib/max/pdkIO.lib ../technology/${technology}/lib/max/MEM2_512X32_slow.lib ../technology/${technology}/lib/max/MEM2_136X32_slow.lib ../technology/${technology}/lib/max/MEM2_128X16_slow.lib ../technology/${technology}/lib/max/MEM2_1024X32_slow.lib ../technology/${technology}/lib/max/MEM1_4096X32_slow.lib ../technology/${technology}/lib/max/MEM1_256X32_slow.lib ../technology/${technology}/lib/max/MEM1_1024X32_slow.lib ../technology/${technology}/lib/max/slow.lib ../technology/${technology}/lib/max/MEM2_128X32_slow.lib" 
+[03/12 10:34:44     15s] @file 7: set  libMinFiles  "../technology/${technology}/lib/min/pdkIO.lib ../technology/${technology}/lib/min/MEM2_512X32_slow.lib ../technology/${technology}/lib/min/MEM2_4096X32_slow.lib ../technology/${technology}/lib/min/MEM2_2048X32_slow.lib ../technology/${technology}/lib/min/MEM2_136X32_slow.lib ../technology/${technology}/lib/min/MEM2_128X16_slow.lib ../technology/${technology}/lib/min/MEM2_1024X32_slow.lib ../technology/${technology}/lib/min/MEM1_4096X32_slow.lib ../technology/${technology}/lib/min/MEM1_256X32_slow.lib ../technology/${technology}/lib/min/MEM1_1024X32_slow.lib ../technology/${technology}/lib/min/fast.lib ../technology/${technology}/lib/min/MEM2_128X32_slow.lib" 
+[03/12 10:34:44     15s] @file 8: set  lefFiles  "../technology/${technology}/lef/gsclib045.fixed2.lef ../technology/${technology}/lef/MEM2_128X32.lef ../technology/${technology}/lef/MEM1_256X32.lef ../technology/${technology}/lef/pads.lef" 
+[03/12 10:34:44     15s] @file 9: set  capTableMin  "../technology/${technology}/captbl/best/capTable" 
+[03/12 10:34:44     15s] @file 10: set  capTableMax  "../technology/${technology}/captbl/worst/capTable" 
+[03/12 10:34:44     15s] @file 11: set  qxMapFile  "../technology/${technology}/qx/mapFile" 
+[03/12 10:34:44     15s] @file 12: set  qxTechFile  "../technology/${technology}/qx/qrcTechFile" 
+[03/12 10:34:44     15s] @file 13: set  qxConfFile  "../technology/${technology}/qx/qrc.conf" 
+[03/12 10:34:44     15s] @file 14:
+[03/12 10:34:44     15s] #@ End verbose source setup.tcl
+[03/12 10:34:44     15s] @file 3:
+[03/12 10:34:44     15s] @file 4:
+[03/12 10:34:44     15s] @file 5:
+[03/12 10:34:44     15s] @file 6:
+[03/12 10:34:44     15s] @file 7: if {$designName == "scr1_pipe_top"} {
+[03/12 10:34:44     15s] @file 8: lappend libFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
+[03/12 10:34:44     15s] @file 9: lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
+[03/12 10:34:44     15s] @file 10: lappend libFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lib
+[03/12 10:34:44     15s] @file 11: lappend libFiles ../riscvCoreSyntaCore1/ramInputs/uart.lib
+[03/12 10:34:44     15s] @file 12: lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lib
+[03/12 10:34:44     15s] @file 13: lappend libMinFiles ../riscvCoreSyntaCore1/ramInputs/uart.lib
+[03/12 10:34:44     15s] @file 14: }
+[03/12 10:34:44     15s] @file 15:
+[03/12 10:34:44     15s] @file 16: set conf_qxconf_file {NULL}
+[03/12 10:34:44     15s] @file 17: set conf_qxlib_file {NULL}
+[03/12 10:34:44     15s] @file 18: set defHierChar {/}
+[03/12 10:34:44     15s] @file 19: set init_design_settop 0
+[03/12 10:34:44     15s] @file 20: set init_gnd_net {VSS}
+[03/12 10:34:44     15s] @file 21: set init_lef_file $lefFiles
+[03/12 10:34:44     15s] @file 22: set init_mmmc_file [file normalize scripts/innovus/mmmc${technology}.tcl]
+[03/12 10:34:44     15s] @file 23: set init_pwr_net {VDD}
+[03/12 10:34:44     15s] @file 24: set init_verilog [file normalize synthesis/outputs/${designName}_synth.v]
+[03/12 10:34:44     15s] @file 25: set powerIntent [file normalize synthesis/outputs/${designName}_synth1.upf]
+[03/12 10:34:44     15s] @file 26: set lsgOCPGainMult 1.000000
+[03/12 10:34:44     15s] @file 27: set init_design_setup ${designName}
+[03/12 10:34:44     15s] @file 28:
+[03/12 10:34:44     15s] @file 29: set pnrDir "pnr"
+[03/12 10:34:44     15s] @file 30: if {![file exists $pnrDir]} {...}
+[03/12 10:34:44     15s] @file 34: catch {cd $pnrDir}
+[03/12 10:34:44     15s] @file 35:
+[03/12 10:34:44     15s] @file 36:
+[03/12 10:34:44     15s] @file 37: set_multi_cpu_usage -local_cpu 2 -verbose
+[03/12 10:34:44     15s] set_multi_cpu_usage -local_cpu 2
+[03/12 10:34:44     15s] @file 38:
+[03/12 10:34:44     15s] @file 39: ### need to generated viewDefinition_cui.tcl and use it here
+[03/12 10:34:44     15s] @file 40: read_mmmc $init_mmmc_file
+[03/12 10:34:44     15s] #@ Begin verbose source /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/scripts/innovus/mmmc45.tcl (pre)
+[03/12 10:34:44     15s] @file 1:
+[03/12 10:34:44     15s] @file 2: create_library_set -name fast\
+[03/12 10:34:44     15s]    -timing\
+[03/12 10:34:44     15s]     [list $libMinFiles]
+[03/12 10:34:44     15s] @file 5: create_library_set -name slow\
+[03/12 10:34:44     15s]    -timing\
+[03/12 10:34:44     15s]     [list $libFiles]
+[03/12 10:34:44     15s] @file 8: create_timing_condition -name tc_slow -library_sets slow 
+[03/12 10:34:44     15s] @file 9: create_timing_condition -name tc_fast -library_sets fast
+[03/12 10:34:44     15s] @file 10: create_rc_corner -name rc_best\
+[03/12 10:34:44     15s]    -cap_table $capTableMin\
+[03/12 10:34:44     15s]    -pre_route_res 1.34236\
+[03/12 10:34:44     15s]    -post_route_res 1.34236\
+[03/12 10:34:44     15s]    -pre_route_cap 1.10066\
+[03/12 10:34:44     15s]    -post_route_cap 0.960235\
+[03/12 10:34:44     15s]    -post_route_cross_cap 1.22327\
+[03/12 10:34:44     15s]    -pre_route_clock_res 0\
+[03/12 10:34:44     15s]    -pre_route_clock_cap 0\
+[03/12 10:34:44     15s]    -post_route_clock_cap {0.969117 0 0}\
+[03/12 10:34:44     15s]    -T 0\
+[03/12 10:34:44     15s]    -qrc_tech $qxTechFile
+[03/12 10:34:44     15s] @file 22:
+[03/12 10:34:44     15s] @file 23: create_rc_corner -name rc_worst\
+[03/12 10:34:44     15s]    -cap_table $capTableMax\
+[03/12 10:34:44     15s]    -pre_route_res 1.34236\
+[03/12 10:34:44     15s]    -post_route_res 1.34236\
+[03/12 10:34:44     15s]    -pre_route_cap 1.10066\
+[03/12 10:34:44     15s]    -post_route_cap 0.960234\
+[03/12 10:34:44     15s]    -post_route_cross_cap 1.22327\
+[03/12 10:34:44     15s]    -pre_route_clock_res 0\
+[03/12 10:34:44     15s]    -pre_route_clock_cap 0\
+[03/12 10:34:44     15s]    -post_route_clock_cap {0.969117 0 0}\
+[03/12 10:34:44     15s]    -T 125\
+[03/12 10:34:44     15s]    -qrc_tech $qxTechFile
+[03/12 10:34:44     15s] @file 35:
+[03/12 10:34:44     15s] @file 36:
+[03/12 10:34:44     15s] @file 37: create_delay_corner -name slow_max\
+[03/12 10:34:44     15s]    -timing_condition tc_slow\
+[03/12 10:34:44     15s]    -rc_corner rc_worst
+[03/12 10:34:44     15s] @file 40: create_delay_corner -name fast_min\
+[03/12 10:34:44     15s]    -timing_condition tc_fast\
+[03/12 10:34:44     15s]    -rc_corner rc_best
+[03/12 10:34:44     15s] @file 43: create_constraint_mode -name functional_func_slow_max\
+[03/12 10:34:44     15s]    -sdc_files\
+[03/12 10:34:44     15s]     [list ../synthesis/outputs/${designName}_synth.sdc]
+[03/12 10:34:44     15s] @file 46: create_analysis_view -name func_slow_max -constraint_mode functional_func_slow_max -delay_corner slow_max
+[03/12 10:34:44     15s] @file 47: create_analysis_view -name func_fast_min -constraint_mode functional_func_slow_max -delay_corner fast_min
+[03/12 10:34:44     15s] @file 48: set_analysis_view -setup [list func_slow_max] -hold [list func_fast_min]
+[03/12 10:34:44     15s] #@ End verbose source /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/scripts/innovus/mmmc45.tcl
+[03/12 10:34:45     15s] Starting library reading in 'Multi-threaded flow' (with '2' threads)
+[03/12 10:34:45     15s] 
+[03/12 10:34:45     15s] Threads Configured:2
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_4096X32_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_4096X32_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM2_4096X32.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_2048X32_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_2048X32_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM2_2048X32.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib, Line 135)
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1197):	The cell 'PADO' on line 142 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 156. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1197):	The cell 'PADI' on line 197 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 204. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADI' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADI' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1197):	The cell 'PADIO' on line 252 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 260. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADIO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADIO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/pdkIO.lib)
+[03/12 10:34:45     15s] Read 3 cells in library GPDK_IO.lib.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_512X32_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_512X32_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM2_512X32.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_136X32_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_136X32_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM2_126X32.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_128X16_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_128X16_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM2_128X16.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_1024X32_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_1024X32_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM2_1024X32.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_4096X32_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_4096X32_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM1_4096X32.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_256X32_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_256X32_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM1_256X32.
+[03/12 10:34:45     15s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_1024X32_slow.lib.
+[03/12 10:34:45     15s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM1_1024X32_slow.lib, Line 135)
+[03/12 10:34:45     15s] Read 1 cells in library MEM1_1024X32.
+[03/12 10:34:45     16s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/slow.lib.
+[03/12 10:34:45     16s] Read 477 cells in library gpdk045bc.
+[03/12 10:34:45     16s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_128X32_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/max/MEM2_128X32_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM2_128X32.
+[03/12 10:34:45     16s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib.
+[03/12 10:34:45     16s] Read 1 cells in library sram_32_1024_scl180_max_1p8V_25C_lib.
+[03/12 10:34:45     16s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/riscvCoreSyntaCore1/ramInputs/i2c_top.lib.
+[03/12 10:34:45     16s] Read 1 cells in library i2c_master_top.
+[03/12 10:34:45     16s] Reading slow timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/riscvCoreSyntaCore1/ramInputs/uart.lib.
+[03/12 10:34:45     16s] Read 1 cells in library uart.
+[03/12 10:34:45     16s] Library reading multithread flow ended.
+[03/12 10:34:45     16s] Starting library reading in 'Multi-threaded flow' (with '2' threads)
+[03/12 10:34:45     16s] 
+[03/12 10:34:45     16s] Threads Configured:2
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib, Line 135)
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1197):	The cell 'PADO' on line 142 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 156. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1197):	The cell 'PADI' on line 197 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 204. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADI' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADI' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1197):	The cell 'PADIO' on line 252 is neither a pad cell nor an auxiliary pad cell but has 'is_pad' attribute set to true on  pin PAD at line 260. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VDD' specified in rail_connection 'VDD' of cell 'PADIO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] **WARN: (TECHLIB-715):	Power_rail 'RAIL_VSS' specified in rail_connection 'VSS' of cell 'PADIO' is not present in power_supply group. This rail_connection will be ignored. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/pdkIO.lib)
+[03/12 10:34:45     16s] Read 3 cells in library GPDK_IO.lib.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_512X32_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_512X32_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM2_512X32.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_4096X32_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_4096X32_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM2_4096X32.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_2048X32_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_2048X32_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM2_2048X32.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_136X32_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_136X32_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM2_126X32.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_128X16_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_128X16_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM2_128X16.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_1024X32_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_1024X32_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM2_1024X32.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_4096X32_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_4096X32_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM1_4096X32.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_256X32_slow.lib.
+[03/12 10:34:45     16s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_256X32_slow.lib, Line 135)
+[03/12 10:34:45     16s] Read 1 cells in library MEM1_256X32.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM1_1024X32_slow.lib.
+[03/12 10:34:45     16s] Message <TECHLIB-1198> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[03/12 10:34:45     16s] Read 1 cells in library MEM1_1024X32.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/fast.lib.
+[03/12 10:34:45     16s] **WARN: (TECHLIB-9153):	Duplicate definition for attribute 'dont_use' encountered. The last definition will be retained. (File /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/fast.lib, Line 19302)
+[03/12 10:34:45     16s] Read 477 cells in library gpdk045wc.
+[03/12 10:34:45     16s] Reading fast timing library /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/technology/45/lib/min/MEM2_128X32_slow.lib.
+[03/12 10:34:45     16s] Read 1 cells in library MEM2_128X32.
+[03/12 10:34:45     16s] Library reading multithread flow ended.
+[03/12 10:34:45     16s] Ending "PreSetAnalysisView" (total cpu=0:00:01.1, real=0:00:01.0, peak res=1036.7M, current mem=926.6M)
+[03/12 10:34:45     16s] @file 41: ###
+[03/12 10:34:45     16s] @file 42:
+[03/12 10:34:45     16s] @file 43:
+[03/12 10:34:45     16s] @file 44: if {$designName == "scr1_pipe_top"} {
+[03/12 10:34:45     16s] @file 45: lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef
+[03/12 10:34:45     16s] @file 46: lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lef
+[03/12 10:34:45     16s] @file 47: lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/uart.lef
+[03/12 10:34:45     16s] @file 48: }
+[03/12 10:34:45     16s] @file 49: read_physical -lef $lefFiles
+[03/12 10:34:45     16s] 
+[03/12 10:34:45     16s] Loading LEF file ../technology/45/lef/gsclib045.fixed2.lef ...
+[03/12 10:34:45     16s] Set DBUPerIGU to M2 pitch 400.
+[03/12 10:34:45     16s] 
+[03/12 10:34:45     16s] Loading LEF file ../technology/45/lef/MEM2_128X32.lef ...
+[03/12 10:34:45     16s] 
+[03/12 10:34:45     16s] Loading LEF file ../technology/45/lef/MEM1_256X32.lef ...
+[03/12 10:34:45     16s] 
+[03/12 10:34:45     16s] Loading LEF file ../technology/45/lef/pads.lef ...
+[03/12 10:34:45     16s] 
+[03/12 10:34:45     16s] Loading LEF file ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef ...
+[03/12 10:34:45     16s] **ERROR: (IMPLF-82):	The x coordinate value 0.0740
+[03/12 10:34:45     16s] in pin 'clk0' in macro 'sram_32_1024_scl180' is not on Manufacturing Grid.
+[03/12 10:34:45     16s] This is likely to result in placement/routing that cannot be manufactured. Check the manufacturing grid defined in the technology LEF file (MANUFACTURINGGRID) and make sure the value is an integral multiple of the grid.
+[03/12 10:34:47     18s] 
+[03/12 10:34:47     18s] Loading LEF file ../riscvCoreSyntaCore1/ramInputs/i2c_top.lef ...
+[03/12 10:34:47     18s] 
+[03/12 10:34:47     18s] Loading LEF file ../riscvCoreSyntaCore1/ramInputs/uart.lef ...
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'sys_clk' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'sys_rst' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[13]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[12]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[11]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[10]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[9]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[8]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[7]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[6]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[5]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[4]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[3]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[2]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[1]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_a[0]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_we' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_di[31]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_di[30]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-200):	Pin 'csr_di[29]' in macro 'uart' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-200' for more detail.
+[03/12 10:34:47     18s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[03/12 10:34:47     18s] To increase the message display limit, refer to the product command reference manual.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[31]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[30]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[29]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[28]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[27]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[26]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[25]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[24]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[23]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[22]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[21]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[20]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[19]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[18]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[17]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[16]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[15]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[14]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[13]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPLF-201):	Pin 'csr_do[12]' in macro 'uart' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/12 10:34:47     18s] Type 'man IMPLF-201' for more detail.
+[03/12 10:34:47     18s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[03/12 10:34:47     18s] To increase the message display limit, refer to the product command reference manual.
+[03/12 10:34:47     18s] 
+[03/12 10:34:47     18s] viaInitial starts at Sun Mar 12 10:34:47 2023
+[03/12 10:34:47     18s] viaInitial ends at Sun Mar 12 10:34:47 2023
+[03/12 10:34:47     18s] 
+[03/12 10:34:47     18s] ##  Check design process and node:  
+[03/12 10:34:47     18s] ##  Both design process and tech node are not set.
+[03/12 10:34:47     18s] 
+[03/12 10:34:47     18s] @file 50:
+[03/12 10:34:47     18s] @file 51: read_netlist $init_verilog
+[03/12 10:34:47     18s] #% Begin Load netlist data ... (date=03/12 10:34:47, mem=969.2M)
+[03/12 10:34:47     18s] *** Begin netlist parsing (mem=969.2M) ***
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'MEM1_256X32' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'MEM1_256X32' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+[03/12 10:34:47     18s] Type 'man IMPVL-159' for more detail.
+[03/12 10:34:47     18s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/12 10:34:47     18s] To increase the message display limit, refer to the product command reference manual.
+[03/12 10:34:47     18s] Created 493 new cells from 27 timing libraries.
+[03/12 10:34:47     18s] Reading netlist ...
+[03/12 10:34:47     18s] Backslashed names will retain backslash and a trailing blank character.
+[03/12 10:34:47     18s] Reading verilog netlist '/nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/synthesis/outputs/scr1_pipe_top_synth.v'
+[03/12 10:34:47     18s] 
+[03/12 10:34:47     18s] *** Memory Usage v#1 (Current mem = 985.344M, initial mem = 363.508M) ***
+[03/12 10:34:47     18s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=985.3M) ***
+[03/12 10:34:47     18s] #% End Load netlist data ... (date=03/12 10:34:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=985.3M, current mem=985.3M)
+[03/12 10:34:47     18s] Top level cell is scr1_pipe_top.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_4096X32' found in library 'MEM2_4096X32', but missing in library 'MEM2_2048X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_2048X32' found in library 'MEM2_2048X32', but missing in library 'GPDK_IO.lib'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'PADIO' found in library 'GPDK_IO.lib', but missing in library 'MEM2_512X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'PADI' found in library 'GPDK_IO.lib', but missing in library 'MEM2_512X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'PADO' found in library 'GPDK_IO.lib', but missing in library 'MEM2_512X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_512X32' found in library 'MEM2_512X32', but missing in library 'MEM2_126X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_136X32' found in library 'MEM2_126X32', but missing in library 'MEM2_128X16'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_128X16' found in library 'MEM2_128X16', but missing in library 'MEM2_1024X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM2_1024X32' found in library 'MEM2_1024X32', but missing in library 'MEM1_4096X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM1_4096X32' found in library 'MEM1_4096X32', but missing in library 'MEM1_256X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM1_256X32' found in library 'MEM1_256X32', but missing in library 'MEM1_1024X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'MEM1_1024X32' found in library 'MEM1_1024X32', but missing in library 'gpdk045bc'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'OAI211XL' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'CLKAND2X4' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'SEDFFHQX1' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'EDFFTRX2' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'NOR3X4' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'DFFHQX4' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'CLKMX2X8' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] **WARN: (TECHLIB-606):	An inconsistency was found during interpolated library checking of library set 'slow'. Cell 'XOR3X1' found in library 'gpdk045bc', but missing in library 'MEM2_128X32'. This can potentially cause issues during delay calculation.
+[03/12 10:34:47     18s] Message <TECHLIB-606> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[03/12 10:34:47     18s] Hooked 983 DB cells to tlib cells.
+[03/12 10:34:47     18s] ** Removed 11 unused lib cells.
+[03/12 10:34:48     18s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=996.1M, current mem=996.1M)
+[03/12 10:34:48     18s] Starting recursive module instantiation check.
+[03/12 10:34:48     18s] No recursion found.
+[03/12 10:34:48     18s] Building hierarchical netlist for Cell scr1_pipe_top ...
+[03/12 10:34:48     18s] *** Netlist is unique.
+[03/12 10:34:48     18s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[03/12 10:34:48     18s] ** info: there are 990 modules.
+[03/12 10:34:48     18s] ** info: there are 3176 stdCell insts.
+[03/12 10:34:48     18s] ** info: there are 10 macros.
+[03/12 10:34:48     19s] 
+[03/12 10:34:48     19s] *** Memory Usage v#1 (Current mem = 1084.176M, initial mem = 363.508M) ***
+[03/12 10:34:48     19s] @file 52:
+[03/12 10:34:48     19s] @file 53: init_design
+[03/12 10:34:48     19s] Horizontal Layer M1 offset = 190 (derived)
+[03/12 10:34:48     19s] Vertical Layer M2 offset = 200 (derived)
+[03/12 10:34:48     19s] Start create_tracks
+[03/12 10:34:48     19s] Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:48     19s] Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+[03/12 10:34:48     19s] Extraction setup Started 
+[03/12 10:34:48     19s] 
+[03/12 10:34:48     19s] Trim Metal Layers:
+[03/12 10:34:48     19s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[03/12 10:34:48     19s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for pre_route and post_route extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for pre_route and post_route (effort level medium/high/signoff) extraction engines.
+[03/12 10:34:48     19s] Type 'man IMPEXT-6202' for more detail.
+[03/12 10:34:48     19s] Reading Capacitance Table File ../technology/45/captbl/worst/capTable ...
+[03/12 10:34:48     19s] Cap table was created using Encounter 09.12-e135_1.
+[03/12 10:34:48     19s] Process name: GPDK45.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2760):	Layer M10 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2760):	Layer M11 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2771):	Via Via9 specified in the cap table is ignored because its top layer, M10, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2771):	Via Via10 specified in the cap table is ignored because its top layer, M11, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2710):	Basic Cap table for layer M10 is ignored because the layer is not specified in the technology LEF file.
+[03/12 10:34:48     19s] Reading Capacitance Table File ../technology/45/captbl/best/capTable ...
+[03/12 10:34:48     19s] Cap table was created using Encounter 09.12-e135_1.
+[03/12 10:34:48     19s] Process name: GPDK45.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2760):	Layer M10 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2760):	Layer M11 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2771):	Via Via9 specified in the cap table is ignored because its top layer, M10, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2771):	Via Via10 specified in the cap table is ignored because its top layer, M11, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/12 10:34:48     19s] **WARN: (IMPEXT-2710):	Basic Cap table for layer M10 is ignored because the layer is not specified in the technology LEF file.
+[03/12 10:34:48     19s] Importing multi-corner RC tables ... 
+[03/12 10:34:48     19s] Summary of Active RC-Corners : 
+[03/12 10:34:48     19s]  
+[03/12 10:34:48     19s]  Analysis View: func_slow_max
+[03/12 10:34:48     19s]     RC-Corner Name        : rc_worst
+[03/12 10:34:48     19s]     RC-Corner Index       : 0
+[03/12 10:34:48     19s]     RC-Corner Temperature : 125 Celsius
+[03/12 10:34:48     19s]     RC-Corner Cap Table   : '../technology/45/captbl/worst/capTable'
+[03/12 10:34:48     19s]     RC-Corner PreRoute Res Factor         : 1.34
+[03/12 10:34:48     19s]     RC-Corner PreRoute Cap Factor         : 1.1
+[03/12 10:34:48     19s]     RC-Corner PostRoute Res Factor        : 1.34 {1.34 1 1}
+[03/12 10:34:48     19s]     RC-Corner PostRoute Cap Factor        : 0.96 {0.96 1 1}
+[03/12 10:34:48     19s]     RC-Corner PostRoute XCap Factor       : 1.22 {1.22 1 1}
+[03/12 10:34:48     19s]     RC-Corner PreRoute Clock Res Factor   : 1.34	[Derived from postRoute_res (effortLevel low)]
+[03/12 10:34:48     19s]     RC-Corner PreRoute Clock Cap Factor   : 0.96	[Derived from postRoute_cap (effortLevel low)]
+[03/12 10:34:48     19s]     RC-Corner PostRoute Clock Cap Factor  : 0.969 {0.969 1 1} 
+[03/12 10:34:48     19s]     RC-Corner PostRoute Clock Res Factor  : 1.34 {1.34 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/12 10:34:48     19s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1.22 {1.22 1 1} 
+[03/12 10:34:48     19s]     RC-Corner Technology file: '../technology/45/qx/qrcTechFile'
+[03/12 10:34:48     19s]  
+[03/12 10:34:48     19s]  Analysis View: func_fast_min
+[03/12 10:34:48     19s]     RC-Corner Name        : rc_best
+[03/12 10:34:48     19s]     RC-Corner Index       : 1
+[03/12 10:34:48     19s]     RC-Corner Temperature : 0 Celsius
+[03/12 10:34:48     19s]     RC-Corner Cap Table   : '../technology/45/captbl/best/capTable'
+[03/12 10:34:48     19s]     RC-Corner PreRoute Res Factor         : 1.34
+[03/12 10:34:48     19s]     RC-Corner PreRoute Cap Factor         : 1.1
+[03/12 10:34:48     19s]     RC-Corner PostRoute Res Factor        : 1.34 {1.34 1 1}
+[03/12 10:34:48     19s]     RC-Corner PostRoute Cap Factor        : 0.96 {0.96 1 1}
+[03/12 10:34:48     19s]     RC-Corner PostRoute XCap Factor       : 1.22 {1.22 1 1}
+[03/12 10:34:48     19s]     RC-Corner PreRoute Clock Res Factor   : 1.34	[Derived from postRoute_res (effortLevel low)]
+[03/12 10:34:48     19s]     RC-Corner PreRoute Clock Cap Factor   : 0.96	[Derived from postRoute_cap (effortLevel low)]
+[03/12 10:34:48     19s]     RC-Corner PostRoute Clock Cap Factor  : 0.969 {0.969 1 1} 
+[03/12 10:34:48     19s]     RC-Corner PostRoute Clock Res Factor  : 1.34 {1.34 1 1} 	[Derived from postRoute_res (effortLevel low)][03/12 10:34:48     19s] Technology file '../technology/45/qx/qrcTechFile' associated with first view 'func_slow_max' will be used as the primary corner for the multi-corner extraction.
+
+[03/12 10:34:48     19s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1.22 {1.22 1 1} 
+[03/12 10:34:48     19s]     RC-Corner Technology file: '../technology/45/qx/qrcTechFile'
+[03/12 10:34:48     19s] 
+[03/12 10:34:48     19s] Trim Metal Layers:
+[03/12 10:34:48     19s] LayerId::1 widthSet size::4
+[03/12 10:34:48     19s] LayerId::2 widthSet size::4
+[03/12 10:34:48     19s] LayerId::3 widthSet size::4
+[03/12 10:34:48     19s] LayerId::4 widthSet size::4
+[03/12 10:34:48     19s] LayerId::5 widthSet size::4
+[03/12 10:34:48     19s] LayerId::6 widthSet size::4
+[03/12 10:34:48     19s] LayerId::7 widthSet size::4
+[03/12 10:34:48     19s] LayerId::8 widthSet size::4
+[03/12 10:34:48     19s] LayerId::9 widthSet size::5
+[03/12 10:34:48     19s] eee: pegSigSF::1.070000
+[03/12 10:34:48     19s] Updating RC grid for preRoute extraction ...
+[03/12 10:34:48     19s] Initializing multi-corner capacitance tables ... 
+[03/12 10:34:48     19s] Initializing multi-corner resistance tables ...
+[03/12 10:34:48     19s] eee: l::1 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] eee: l::2 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] eee: l::3 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] eee: l::4 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] eee: l::8 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] eee: l::9 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[03/12 10:34:48     19s] {RT rc_worst 0 9 9 {8 0} 1}
+[03/12 10:34:48     19s] Preroute length aware model: n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.720100 ; newSi: 0.000000 ; pMod: 82 ; wHLS: 1.800250 ;
+[03/12 10:34:48     19s] *Info: initialize multi-corner CTS.
+[03/12 10:34:48     19s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1330.5M, current mem=1090.4M)
+[03/12 10:34:48     19s] Reading timing constraints file '../synthesis/outputs/scr1_pipe_top_synth.sdc' ...
+[03/12 10:34:48     19s] Current (total cpu=0:00:19.8, real=0:00:30.0, peak res=1351.1M, current mem=1351.1M)
+[03/12 10:34:49     19s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../synthesis/outputs/scr1_pipe_top_synth.sdc, Line 9).
+[03/12 10:34:49     19s] 
+[03/12 10:34:49     19s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../synthesis/outputs/scr1_pipe_top_synth.sdc, Line 10).
+[03/12 10:34:49     19s] 
+[03/12 10:34:49     19s] scr1_pipe_top
+[03/12 10:34:49     19s] INFO (CTE): Reading of timing constraints file ../synthesis/outputs/scr1_pipe_top_synth.sdc completed, with 2 WARNING
+[03/12 10:34:49     19s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:01.0, peak res=1358.6M, current mem=1358.6M)
+[03/12 10:34:49     19s] Current (total cpu=0:00:19.8, real=0:00:31.0, peak res=1358.6M, current mem=1358.6M)
+[03/12 10:34:49     19s] **WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+[03/12 10:34:49     19s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[03/12 10:34:49     19s] 
+[03/12 10:34:49     19s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[03/12 10:34:49     19s] Summary for sequential cells identification: 
+[03/12 10:34:49     19s]   Identified SBFF number: 94
+[03/12 10:34:49     19s]   Identified MBFF number: 0
+[03/12 10:34:49     19s]   Identified SB Latch number: 0
+[03/12 10:34:49     19s]   Identified MB Latch number: 0
+[03/12 10:34:49     19s]   Not identified SBFF number: 24
+[03/12 10:34:49     19s]   Not identified MBFF number: 0
+[03/12 10:34:49     19s]   Not identified SB Latch number: 0
+[03/12 10:34:49     19s]   Not identified MB Latch number: 0
+[03/12 10:34:49     19s]   Number of sequential cells which are not FFs: 32
+[03/12 10:34:49     19s] Total number of combinational cells: 317
+[03/12 10:34:49     19s] Total number of sequential cells: 150
+[03/12 10:34:49     19s] Total number of tristate cells: 10
+[03/12 10:34:49     19s] Total number of level shifter cells: 0
+[03/12 10:34:49     19s] Total number of power gating cells: 0
+[03/12 10:34:49     19s] Total number of isolation cells: 0
+[03/12 10:34:49     19s] Total number of power switch cells: 0
+[03/12 10:34:49     19s] Total number of pulse generator cells: 0
+[03/12 10:34:49     19s] Total number of always on buffers: 0
+[03/12 10:34:49     19s] Total number of retention cells: 0
+[03/12 10:34:49     19s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFX6
+[03/12 10:34:49     19s] Total number of usable buffers: 8
+[03/12 10:34:49     19s] List of unusable buffers: CLKBUFX2 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX3
+[03/12 10:34:49     19s] Total number of unusable buffers: 8
+[03/12 10:34:49     19s] List of usable inverters: INVX1 INVX12 INVX2 INVX3 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+[03/12 10:34:49     19s] Total number of usable inverters: 10
+[03/12 10:34:49     19s] List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8
+[03/12 10:34:49     19s] Total number of unusable inverters: 9
+[03/12 10:34:49     19s] List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+[03/12 10:34:49     19s] Total number of identified usable delay cells: 8
+[03/12 10:34:49     19s] List of identified unusable delay cells:
+[03/12 10:34:49     19s] Total number of identified unusable delay cells: 0
+[03/12 10:34:49     19s] 
+[03/12 10:34:49     19s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[03/12 10:34:49     19s] 
+[03/12 10:34:49     19s] TimeStamp Deleting Cell Server Begin ...
+[03/12 10:34:49     19s] 
+[03/12 10:34:49     19s] TimeStamp Deleting Cell Server End ...
+[03/12 10:34:49     19s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1387.9M, current mem=1387.8M)
+[03/12 10:34:49     19s] 
+[03/12 10:34:49     19s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[03/12 10:34:49     19s] Summary for sequential cells identification: 
+[03/12 10:34:49     19s]   Identified SBFF number: 94
+[03/12 10:34:49     19s]   Identified MBFF number: 0
+[03/12 10:34:49     19s]   Identified SB Latch number: 0
+[03/12 10:34:49     19s]   Identified MB Latch number: 0
+[03/12 10:34:49     19s]   Not identified SBFF number: 24
+[03/12 10:34:49     19s]   Not identified MBFF number: 0
+[03/12 10:34:49     19s]   Not identified SB Latch number: 0
+[03/12 10:34:49     19s]   Not identified MB Latch number: 0
+[03/12 10:34:49     19s]   Number of sequential cells which are not FFs: 32
+[03/12 10:34:49     19s]  Visiting view : func_slow_max
+[03/12 10:34:49     19s]    : PowerDomain = none : Weighted F : unweighted  = 22.70 (1.000) with rcCorner = 0
+[03/12 10:34:49     19s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = -1
+[03/12 10:34:49     19s]  Visiting view : func_fast_min
+[03/12 10:34:49     19s]    : PowerDomain = none : Weighted F : unweighted  = 8.10 (1.000) with rcCorner = 1
+[03/12 10:34:49     19s]    : PowerDomain = none : Weighted F : unweighted  = 6.60 (1.000) with rcCorner = -1
+[03/12 10:34:49     19s] TLC MultiMap info (StdDelay):
+[03/12 10:34:49     19s]   : fast_min + fast + 1 + no RcCorner := 6.6ps
+[03/12 10:34:49     19s]   : fast_min + fast + 1 + rc_best := 8.1ps
+[03/12 10:34:49     19s]   : slow_max + slow + 1 + no RcCorner := 18.4ps
+[03/12 10:34:49     19s]   : slow_max + slow + 1 + rc_worst := 22.7ps
+[03/12 10:34:49     19s]  Setting StdDelay to: 22.7ps
+[03/12 10:34:49     19s] 
+[03/12 10:34:49     19s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[03/12 10:34:49     19s] @file 54: create_floorplan -site CoreSite -core_density_size 1 0.7 10 10 10 10
+[03/12 10:34:49     19s] Adjusting coreMargin bottom  to finFet grid (PlacementGrid) : after adjusting :10.07
+[03/12 10:34:49     19s] Adjusting coreMargin top     to finFet grid (PlacementGrid) : after adjusting :10.07
+[03/12 10:34:49     19s] Adjusting core size to PlacementGrid : width :3144.2 height : 3142.98
+[03/12 10:34:49     20s] Horizontal Layer M1 offset = 190 (derived)
+[03/12 10:34:49     20s] Vertical Layer M2 offset = 200 (derived)
+[03/12 10:34:49     20s] Start create_tracks
+[03/12 10:34:49     20s] Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] @file 55:
+[03/12 10:34:49     20s] @file 56: read_power_intent -1801 ${powerIntent}
+[03/12 10:34:49     20s] Reading power intent file /nfs/site/disks/vmisd_vclp_efficiency/rcg/test/cadence/venvRcg/AsicMethadology/synthesis/outputs/scr1_pipe_top_synth1.upf ...
+[03/12 10:34:49     20s] Checking power intent
+[03/12 10:34:49     20s] Checking scoped supply_net connected to top-level supply_net
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: checking scoped supply_net: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] Checking supply_set/supply_net
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: checking pst supplies: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] Setting boundaryports(3) from port_attr
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: checking port_attribute: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: checking related_supply_net: cpu=0:00:00.01 real=0:00:00.00
+[03/12 10:34:49     20s] INFO: The power intent file has only one domain defined.
+[03/12 10:34:49     20s] Domain-based supply connection will be applied to top cell. Other domain-related power intent commands will be ignored.
+[03/12 10:34:49     20s] @file 57: commit_power_intent -verbose
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: freeTimingGraph: cpu=0:00:00.07 real=0:00:00.00
+[03/12 10:34:49     20s] COMMIT_1801: commit_logic_port_net 
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_logic_port/net: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] COMMIT_1801: commit_supply_net 
+[03/12 10:34:49     20s] ::MSV::createSupplyPort vss -dir input -type ground
+[03/12 10:34:49     20s] ::MSV::createSupplyPort vdd -dir input -type power
+[03/12 10:34:49     20s] ::MSV::createSupplyNet vdd -type power
+[03/12 10:34:49     20s] ::MSV::createSupplyNet vss -type ground
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_supply_net: cpu=0:00:00.01 real=0:00:00.00
+[03/12 10:34:49     20s] COMMIT_1801: commit_power_domain 
+[03/12 10:34:49     20s] ::MSV::createPowerDomain pd_SOC_TOP -default
+[03/12 10:34:49     20s] ::MSV::modifyPowerDomainMember pd_SOC_TOP  -instances * -power { (vdd:VDD)} -ground { (vss:VSS)}
+[03/12 10:34:49     20s] Total 0 new pin(s) connected to net 'vdd'
+[03/12 10:34:49     20s] Total 0 new pin(s) connected to net 'vss'
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_power_domain: cpu=0:00:00.02 real=0:00:00.00
+[03/12 10:34:49     20s] COMMIT_1801: commit_global_connect -no_related_pg -check_macro_pg
+[03/12 10:34:49     20s] globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram1}
+[03/12 10:34:49     20s] globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram1}
+[03/12 10:34:49     20s] globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram2}
+[03/12 10:34:49     20s] globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram2}
+[03/12 10:34:49     20s] globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram3}
+[03/12 10:34:49     20s] globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram3}
+[03/12 10:34:49     20s] globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram4}
+[03/12 10:34:49     20s] globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram4}
+[03/12 10:34:49     20s] globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram5}
+[03/12 10:34:49     20s] globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram5}
+[03/12 10:34:49     20s] globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram6}
+[03/12 10:34:49     20s] globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram6}
+[03/12 10:34:49     20s] globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram7}
+[03/12 10:34:49     20s] globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram7}
+[03/12 10:34:49     20s] globalNetConnect vdd -type pgpin -pin {vdd} -sinst {sram_32_1024_scl180_ram8}
+[03/12 10:34:49     20s] globalNetConnect vss -type pgpin -pin {gnd} -sinst {sram_32_1024_scl180_ram8}
+[03/12 10:34:49     20s] COMMIT_1801: commit_supplynet_connect -check_macro_pg
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_global_connect: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] ::MSV::createSupplySet pd_SOC_TOP_primary_ss_ -power vdd -ground vss
+[03/12 10:34:49     20s] ::MSV::setPowerDomainPGNets pd_SOC_TOP -power vdd -ground vss
+[03/12 10:34:49     20s] ::MSV::addUpfPortState vdd -state { active_state 1 } -state { off_state off } -net vdd
+[03/12 10:34:49     20s] ::MSV::createUpfPst pstSoc -supplies {vdd}
+[03/12 10:34:49     20s] ::MSV::addUpfPstState state1 -pst pstSoc -state {active_state}
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_power_mode: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] ::MSV::createSupplySet pd_SOC_TOP_primary_ss_ -power vdd -ground vss
+[03/12 10:34:49     20s] ::MSV::setPowerDomainPGNets pd_SOC_TOP -power vdd -ground vss
+[03/12 10:34:49     20s] ::MSV::setPowerDomainSupplySet pd_SOC_TOP -primary pd_SOC_TOP_primary_ss_
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: define_low_power_cells: cpu=0:00:00.01 real=0:00:00.00
+[03/12 10:34:49     20s] Current (total cpu=0:00:20.4, real=0:00:31.0, peak res=1418.8M, current mem=1412.7M)
+[03/12 10:34:49     20s] scr1_pipe_top
+[03/12 10:34:49     20s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1413.4M, current mem=1413.4M)
+[03/12 10:34:49     20s] Current (total cpu=0:00:20.5, real=0:00:31.0, peak res=1418.8M, current mem=1413.4M)
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: buildTimingGraph: cpu=0:00:00.16 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: GNC_connect_existing_iso_shifter: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: connectAlwaysOnBuf: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: replaceAlwaysOnAssignBuffer: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_power_switch: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_retention: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_isolation: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: commit_level_shifter: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: connectAlwaysOnBuf: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] IEEE1801_RUNTIME: initIsoLSNeededBetweenPowerDomains: cpu=0:00:00.00 real=0:00:00.00
+[03/12 10:34:49     20s] 
+[03/12 10:34:49     20s] TimeStamp Deleting Cell Server Begin ...
+[03/12 10:34:49     20s] 
+[03/12 10:34:49     20s] TimeStamp Deleting Cell Server End ...
+[03/12 10:34:49     20s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[03/12 10:34:49     20s] 
+[03/12 10:34:49     20s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[03/12 10:34:49     20s] Summary for sequential cells identification: 
+[03/12 10:34:49     20s]   Identified SBFF number: 94
+[03/12 10:34:49     20s]   Identified MBFF number: 0
+[03/12 10:34:49     20s]   Identified SB Latch number: 0
+[03/12 10:34:49     20s]   Identified MB Latch number: 0
+[03/12 10:34:49     20s]   Not identified SBFF number: 24
+[03/12 10:34:49     20s]   Not identified MBFF number: 0
+[03/12 10:34:49     20s]   Not identified SB Latch number: 0
+[03/12 10:34:49     20s]   Not identified MB Latch number: 0
+[03/12 10:34:49     20s]   Number of sequential cells which are not FFs: 32
+[03/12 10:34:49     20s] Total number of combinational cells: 317
+[03/12 10:34:49     20s] Total number of sequential cells: 150
+[03/12 10:34:49     20s] Total number of tristate cells: 10
+[03/12 10:34:49     20s] Total number of level shifter cells: 0
+[03/12 10:34:49     20s] Total number of power gating cells: 0
+[03/12 10:34:49     20s] Total number of isolation cells: 0
+[03/12 10:34:49     20s] Total number of power switch cells: 0
+[03/12 10:34:49     20s] Total number of pulse generator cells: 0
+[03/12 10:34:49     20s] Total number of always on buffers: 0
+[03/12 10:34:49     20s] Total number of retention cells: 0
+[03/12 10:34:49     20s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFX6
+[03/12 10:34:49     20s] Total number of usable buffers: 8
+[03/12 10:34:49     20s] List of unusable buffers: CLKBUFX2 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX3
+[03/12 10:34:49     20s] Total number of unusable buffers: 8
+[03/12 10:34:49     20s] List of usable inverters: INVX1 INVX12 INVX2 INVX3 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+[03/12 10:34:49     20s] Total number of usable inverters: 10
+[03/12 10:34:49     20s] List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8
+[03/12 10:34:49     20s] Total number of unusable inverters: 9
+[03/12 10:34:49     20s] List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+[03/12 10:34:49     20s] Total number of identified usable delay cells: 8
+[03/12 10:34:49     20s] List of identified unusable delay cells:[03/12 10:34:49     20s] 
+[03/12 10:34:49     20s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+
+[03/12 10:34:49     20s] Total number of identified unusable delay cells: 0
+[03/12 10:34:49     20s] 
+[03/12 10:34:49     20s] TimeStamp Deleting Cell Server Begin ...
+[03/12 10:34:49     20s] 
+[03/12 10:34:49     20s] TimeStamp Deleting Cell Server End ...
+[03/12 10:34:49     20s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1424.5M, current mem=1424.5M)
+[03/12 10:34:49     20s] 
+[03/12 10:34:49     20s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[03/12 10:34:49     20s] Summary for sequential cells identification: 
+[03/12 10:34:49     20s]   Identified SBFF number: 94
+[03/12 10:34:49     20s]   Identified MBFF number: 0
+[03/12 10:34:49     20s]   Identified SB Latch number: 0
+[03/12 10:34:49     20s]   Identified MB Latch number: 0
+[03/12 10:34:49     20s]   Not identified SBFF number: 24
+[03/12 10:34:49     20s]   Not identified MBFF number: 0
+[03/12 10:34:49     20s]   Not identified SB Latch number: 0
+[03/12 10:34:49     20s]   Not identified MB Latch number: 0
+[03/12 10:34:49     20s]   Number of sequential cells which are not FFs: 32
+[03/12 10:34:49     20s]  Visiting view : func_slow_max
+[03/12 10:34:49     20s]    : PowerDomain = pd_SOC_TOP : Weighted F : unweighted  = 22.70 (1.000) with rcCorner = 0
+[03/12 10:34:49     20s]    : PowerDomain = pd_SOC_TOP : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = -1
+[03/12 10:34:49     20s]  Visiting view : func_fast_min
+[03/12 10:34:49     20s]    : PowerDomain = pd_SOC_TOP : Weighted F : unweighted  = 8.10 (1.000) with rcCorner = 1
+[03/12 10:34:49     20s]    : PowerDomain = pd_SOC_TOP : Weighted F : unweighted  = 6.60 (1.000) with rcCorner = -1
+[03/12 10:34:49     20s] TLC MultiMap info (StdDelay):
+[03/12 10:34:49     20s]   : fast_min + fast + 1 + no RcCorner := 6.6ps
+[03/12 10:34:49     20s]   : fast_min + fast + 1 + rc_best := 8.1ps
+[03/12 10:34:49     20s]   : slow_max + slow + 1 + no RcCorner := 18.4ps
+[03/12 10:34:49     20s]   : slow_max + slow + 1 + rc_worst := 22.7ps
+[03/12 10:34:49     20s]  Setting StdDelay to: 22.7ps
+[03/12 10:34:49     20s] 
+[03/12 10:34:49     20s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[03/12 10:34:49     20s] check Iso/LS needed between power domains
+[03/12 10:34:49     20s] finished checking Iso/LS needed between power domains
+[03/12 10:34:49     20s] finished commitUpf -verbose
+[03/12 10:34:49     20s] @file 58:
+[03/12 10:34:49     20s] @file 59: set spareCount 500
+[03/12 10:34:49     20s] @file 60: if {$designName == "scr1_pipe_top"} {
+[03/12 10:34:49     20s] @file 61: read_def ../scripts/innovus/coreFP.def
+[03/12 10:34:49     20s] Reading DEF file '../scripts/innovus/coreFP.def', current time is Sun Mar 12 10:34:49 2023 ...
+[03/12 10:34:49     20s] --- DIVIDERCHAR '/'
+[03/12 10:34:49     20s] --- UnitsPerDBU = 1.0000
+[03/12 10:34:49     20s] Horizontal Layer M1 offset = 190 (derived)
+[03/12 10:34:49     20s] Vertical Layer M2 offset = 200 (derived)
+[03/12 10:34:49     20s] Start create_tracks
+[03/12 10:34:49     20s] Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+[03/12 10:34:49     20s] --- DIEAREA (0 0) (6224000 6674320)
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2imem_cmd_o' specified in Pin 'pipe2imem_cmd_o' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2imem_addr_o[1]' specified in Pin 'pipe2imem_addr_o[1]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2imem_addr_o[0]' specified in Pin 'pipe2imem_addr_o[0]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[31]' specified in Pin 'pipe2dmem_wdata_o[31]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[30]' specified in Pin 'pipe2dmem_wdata_o[30]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[29]' specified in Pin 'pipe2dmem_wdata_o[29]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[28]' specified in Pin 'pipe2dmem_wdata_o[28]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[27]' specified in Pin 'pipe2dmem_wdata_o[27]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[26]' specified in Pin 'pipe2dmem_wdata_o[26]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[25]' specified in Pin 'pipe2dmem_wdata_o[25]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[24]' specified in Pin 'pipe2dmem_wdata_o[24]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[23]' specified in Pin 'pipe2dmem_wdata_o[23]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[22]' specified in Pin 'pipe2dmem_wdata_o[22]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[21]' specified in Pin 'pipe2dmem_wdata_o[21]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[20]' specified in Pin 'pipe2dmem_wdata_o[20]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[19]' specified in Pin 'pipe2dmem_wdata_o[19]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[18]' specified in Pin 'pipe2dmem_wdata_o[18]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[17]' specified in Pin 'pipe2dmem_wdata_o[17]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[16]' specified in Pin 'pipe2dmem_wdata_o[16]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (IMPDF-247):	Net 'pipe2dmem_wdata_o[15]' specified in Pin 'pipe2dmem_wdata_o[15]' is inconsistent with netlist.
+[03/12 10:34:49     20s] **WARN: (EMS-27):	Message (IMPDF-247) has exceeded the current message display limit of 20.
+[03/12 10:34:49     20s] To increase the message display limit, refer to the product command reference manual.
+[03/12 10:34:49     20s] defIn read 10000 lines...
+[03/12 10:34:49     20s] DEF file '../scripts/innovus/coreFP.def' is parsed, current time is Sun Mar 12 10:34:49 2023.
+[03/12 10:34:49     20s] Extracting standard cell pins and blockage ...... 
+[03/12 10:34:49     20s] Pin and blockage extraction finished
+[03/12 10:34:49     20s] Updating the floorplan ...
+[03/12 10:34:49     20s] @file 62: set spareCount 2000
+[03/12 10:34:49     20s] @file 63: }
+[03/12 10:34:49     20s] @file 64:
+[03/12 10:34:49     20s] @file 65: check_power_domains -nets_missing_iso
+[03/12 10:34:49     20s] Writing nets crossing power domain boundary and needing isolation cell in report file './verifyPDIsoNets'.
+[03/12 10:34:49     20s] Found 0 net missing required isolation cell
+[03/12 10:34:49     20s] @file 66: check_power_domains -nets_missing_shifter
+[03/12 10:34:49     20s] Writing nets crossing power domain boundary and needing shifter cell in report file './verifyPDXNets'.
+[03/12 10:34:49     20s] Found 0 net missing required shifter
+[03/12 10:34:49     20s] @file 67:
+[03/12 10:34:49     20s] @file 68:
+[03/12 10:34:49     20s] @file 69: ### add tap cells
+[03/12 10:34:49     20s] @file 70: set TAPCell "TIELO"
+[03/12 10:34:49     20s] @file 71: add_well_taps -cell ${TAPCell} -cell_interval 28
+[03/12 10:34:49     20s] **WARN: (IMPSP-9003):	Cell <'TIELO'>'s may not be a physical ONLY cell - has signal pins
+[03/12 10:34:49     20s] OPERPROF: Starting DPlace-Init at level 1, MEM:1429.4M, EPOCH TIME: 1678642489.947664
+[03/12 10:34:49     20s] z: 2, totalTracks: 1
+[03/12 10:34:49     20s] z: 4, totalTracks: 1
+[03/12 10:34:49     20s] z: 6, totalTracks: 1
+[03/12 10:34:49     20s] z: 8, totalTracks: 1
+[03/12 10:34:49     20s] #spOpts: VtWidth hrOri=1 hrSnap=1 rpCkHalo=4 
+[03/12 10:34:49     20s] All LLGs are deleted
+[03/12 10:34:49     20s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1431.0M, EPOCH TIME: 1678642489.961367
+[03/12 10:34:49     20s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1431.4M, EPOCH TIME: 1678642489.961597
+[03/12 10:34:49     20s] # Building pd_SOC_TOP llgBox search-tree.
+[03/12 10:34:49     20s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1431.7M, EPOCH TIME: 1678642489.962278
+[03/12 10:34:50     20s] Multithreaded Timing Analysis is initialized with 2 threads
+[03/12 10:34:50     20s] 
+[03/12 10:34:50     20s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1494.1M, EPOCH TIME: 1678642490.045809
+[03/12 10:34:50     20s] Core basic site is CoreSite
+[03/12 10:34:50     20s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1495.4M, EPOCH TIME: 1678642490.065420
+[03/12 10:34:50     20s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.001, REAL:0.001, MEM:1495.6M, EPOCH TIME: 1678642490.066094
+[03/12 10:34:50     20s] Use non-trimmed site array because memory saving is not enough.
+[03/12 10:34:50     20s] SiteArray: non-trimmed site array dimensions = 1928 x 15360
+[03/12 10:34:50     20s] SiteArray: use 118,456,320 bytes
+[03/12 10:34:50     20s] SiteArray: current memory after site array memory allocation 1609.6M
+[03/12 10:34:50     20s] SiteArray: FP blocked sites are writable
+[03/12 10:34:50     20s] PD pd_SOC_TOP has 0 placeable physical insts.
+[03/12 10:34:50     20s] Estimated cell power/ground rail width = 0.213 um
+[03/12 10:34:50     20s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[03/12 10:34:50     20s] OPERPROF:       Starting RoutingBlockageFromWireViaStBox at level 4, MEM:1609.3M, EPOCH TIME: 1678642490.254195
+[03/12 10:34:50     20s] Process 0 wires and vias for routing blockage analysis
+[03/12 10:34:50     20s] OPERPROF:       Finished RoutingBlockageFromWireViaStBox at level 4, CPU:0.000, REAL:0.000, MEM:1609.6M, EPOCH TIME: 1678642490.254568
+[03/12 10:34:50     22s] SiteArray: number of non floorplan blocked sites for llg default is 29614080
+[03/12 10:34:50     22s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:1.408, REAL:0.754, MEM:1609.8M, EPOCH TIME: 1678642490.799347
+[03/12 10:34:50     22s] 
+[03/12 10:34:50     22s]  Pre_CCE_Colorizing is not ON! (0:0:487:0)
+[03/12 10:34:50     22s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:1.614, REAL:0.959, MEM:1610.5M, EPOCH TIME: 1678642490.921661
+[03/12 10:34:50     22s] OPERPROF:   Starting PlacementInitSBTree at level 2, MEM:1610.5M, EPOCH TIME: 1678642490.921719
+[03/12 10:34:50     22s] OPERPROF:   Finished PlacementInitSBTree at level 2, CPU:0.000, REAL:0.000, MEM:1610.5M, EPOCH TIME: 1678642490.922090
+[03/12 10:34:50     22s] [CPU] DPlace-Init (cpu=0:00:01.6, real=0:00:01.0, mem=1610.6MB).
+[03/12 10:34:50     22s] OPERPROF: Finished DPlace-Init at level 1, CPU:1.629, REAL:0.975, MEM:1610.6M, EPOCH TIME: 1678642490.922504
+[03/12 10:34:51     22s] For 73801 new insts, *** Applied 4 GNC rules (cpu = 0:00:00.0)
+[03/12 10:34:51     22s] OPERPROF: Starting spDPlaceCleanup(auto) at level 1, MEM:1722.7M, EPOCH TIME: 1678642491.631712
+[03/12 10:34:51     22s] All LLGs are deleted
+[03/12 10:34:51     22s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1723.2M, EPOCH TIME: 1678642491.645285
+[03/12 10:34:51     22s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.008, REAL:0.008, MEM:1723.2M, EPOCH TIME: 1678642491.652907
+[03/12 10:34:51     22s] OPERPROF: Finished spDPlaceCleanup(auto) at level 1, CPU:0.032, REAL:0.022, MEM:1721.8M, EPOCH TIME: 1678642491.654074
+[03/12 10:34:51     22s] Inserted 73801 well-taps <TIELO> cells (prefix WELLTAP_pd_SOC_TOP).
+[03/12 10:34:51     22s] @file 72: add_well_taps -termination_cells TAP_TERMINATION -column_cells ${TAPCell}
+[03/12 10:34:51     22s] **WARN: (IMPSP-5123):	Cell TAP_TERMINATION is not found.
+[03/12 10:34:51     22s] Type 'man IMPSP-5123' for more detail.
+[03/12 10:34:51     22s] **ERROR: (IMPSP-9093):	Termination cell is not found for adding well tap column termination cells.
+[03/12 10:34:51     22s] **ERROR: (IMPSP-9092):	Option cell or termination_cell is required for command 'add_well_taps'.
+[03/12 10:34:51     22s] **ERROR: (IMPSE-110):	File 'scripts/innovus/floorplan.tcl' line 72: errors out.
+[03/12 10:34:51     22s] #@ End verbose source scripts/innovus/floorplan.tcl
+[03/12 10:34:51     22s] **ERROR: (IMPSYT-6692):	Invalid return code while executing 'scripts/innovus/floorplan.tcl' was returned and script processing was stopped. Review the following error in 'scripts/innovus/floorplan.tcl' then restart.
+[03/12 10:34:51     22s] Error info: scripts/innovus/floorplan.tcl: 
+[03/12 10:34:51     22s]     while executing
+[03/12 10:34:51     22s] "add_well_taps -termination_cells TAP_TERMINATION -column_cells ${TAPCell}"
+[03/12 10:34:51     22s]     (file "scripts/innovus/floorplan.tcl" line 72)
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "::se_source_orig scripts/innovus/floorplan.tcl"
+[03/12 10:34:51     22s]     ("uplevel" body line 1)
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "uplevel [concat ::se_source_orig $args]"
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "if {[::SE::source_verbose_file_state $file_name] == 1} {
+[03/12 10:34:51     22s]               ::SE::source_verbose_start $file_name
+[03/12 10:34:51     22s]               set st [uplevel [concat ::s..."
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "if {$useTclVerbose} {
+[03/12 10:34:51     22s]           # use tcl internal method
+[03/12 10:34:51     22s]           set st ""
+[03/12 10:34:51     22s]           if {[::SE::source_verbose_file_state $file_name] == 1} {
+[03/12 10:34:51     22s]      ..."
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "if {$largeFile == 1} {
+[03/12 10:34:51     22s]     if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+[03/12 10:34:51     22s]       $putCmd "Sourcing $file_name"
+[03/12 10:34:51     22s]     }
+[03/12 10:34:51     22s]     set st [uplevel [concat..."
+[03/12 10:34:51     22s]     (procedure "source" line 157)
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "source scripts/innovus/floorplan.tcl"
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "::se::run_command_from_console "source scripts/innovus/floorplan.tcl""
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "eval_novus {::se::run_command_from_console "source scripts/innovus/floorplan.tcl"}"
+[03/12 10:34:51     22s]     (in namespace inscope "::" script line 1)
+[03/12 10:34:51     22s]     invoked from within
+[03/12 10:34:51     22s] "namespace inscope :: eval_novus "::se::run_command_from_console \"source $fileName\""".
+[03/12 10:34:51     23s] @[DEV]innovus 2> set TAPCell "TIELO"
+TIELO
+[03/12 10:35:04     24s] @[DEV]innovus 3> add_well_taps -cell ${TAPCell} -cell_interval 28
+add_well_taps -cell ${TAPCell} -cell_interval 28
+[03/12 10:35:04     24s] **WARN: (IMPSP-9003):	Cell <'TIELO'>'s may not be a physical ONLY cell - has signal pins
+[03/12 10:35:04     24s] OPERPROF: Starting DPlace-Init at level 1, MEM:1675.7M, EPOCH TIME: 1678642504.731879
+[03/12 10:35:04     24s] z: 2, totalTracks: 1
+[03/12 10:35:04     24s] z: 4, totalTracks: 1
+[03/12 10:35:04     24s] z: 6, totalTracks: 1
+[03/12 10:35:04     24s] z: 8, totalTracks: 1
+[03/12 10:35:04     24s] #spOpts: VtWidth mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[03/12 10:35:04     24s] All LLGs are deleted
+[03/12 10:35:04     24s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1676.0M, EPOCH TIME: 1678642504.748813
+[03/12 10:35:04     24s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1676.0M, EPOCH TIME: 1678642504.749058
+[03/12 10:35:04     24s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1676.0M, EPOCH TIME: 1678642504.758507
+[03/12 10:35:04     24s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1676.0M, EPOCH TIME: 1678642504.761885
+[03/12 10:35:04     24s] Core basic site is CoreSite
+[03/12 10:35:04     24s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1676.0M, EPOCH TIME: 1678642504.783807
+[03/12 10:35:04     24s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.001, REAL:0.001, MEM:1676.0M, EPOCH TIME: 1678642504.785150
+[03/12 10:35:04     24s] Fast DP-INIT is on for default
+[03/12 10:35:04     24s] PD pd_SOC_TOP has 0 placeable physical insts.
+[03/12 10:35:04     24s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[03/12 10:35:04     24s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:0.305, REAL:0.168, MEM:1676.0M, EPOCH TIME: 1678642504.929701
+[03/12 10:35:04     24s] 
+[03/12 10:35:04     24s]  Pre_CCE_Colorizing is not ON! (0:0:487:0)
+[03/12 10:35:05     24s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:0.522, REAL:0.384, MEM:1676.1M, EPOCH TIME: 1678642505.142946
+[03/12 10:35:05     24s] OPERPROF:   Starting PlacementInitSBTree at level 2, MEM:1676.1M, EPOCH TIME: 1678642505.143021
+[03/12 10:35:05     24s] OPERPROF:   Finished PlacementInitSBTree at level 2, CPU:0.000, REAL:0.000, MEM:1676.1M, EPOCH TIME: 1678642505.143415
+[03/12 10:35:05     24s] [CPU] DPlace-Init (cpu=0:00:00.6, real=0:00:01.0, mem=1676.1MB).
+[03/12 10:35:05     24s] OPERPROF: Finished DPlace-Init at level 1, CPU:0.552, REAL:0.415, MEM:1676.1M, EPOCH TIME: 1678642505.146460
+[03/12 10:35:06     25s] For 135755 new insts, *** Applied 4 GNC rules (cpu = 0:00:00.0)
+[03/12 10:35:06     26s] OPERPROF: Starting spDPlaceCleanup(auto) at level 1, MEM:1826.8M, EPOCH TIME: 1678642506.462623
+[03/12 10:35:06     26s] All LLGs are deleted
+[03/12 10:35:06     26s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1827.1M, EPOCH TIME: 1678642506.479013
+[03/12 10:35:06     26s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.020, REAL:0.020, MEM:1827.1M, EPOCH TIME: 1678642506.499140
+[03/12 10:35:06     26s] OPERPROF: Finished spDPlaceCleanup(auto) at level 1, CPU:0.047, REAL:0.038, MEM:1825.6M, EPOCH TIME: 1678642506.500663
+[03/12 10:35:06     26s] Inserted 135755 well-taps <TIELO> cells (prefix WELLTAP_pd_SOC_TOP).
+[03/12 10:35:06     26s] @[DEV]innovus 4> add_well_taps -termination_cells TAP_TERMINATION -column_cells ${TAPCell}
+add_well_taps -termination_cells TAP_TERMINATION -column_cells ${TAPCell}
+[03/12 10:35:06     26s] **WARN: (IMPSP-5123):	Cell TAP_TERMINATION is not found.
+[03/12 10:35:06     26s] Type 'man IMPSP-5123' for more detail.
+[03/12 10:35:06     26s] **ERROR: (IMPSP-9093):	Termination cell is not found for adding well tap column termination cells.
+[03/12 10:35:06     26s] **ERROR: (IMPSP-9092):	Option cell or termination_cell is required for command 'add_well_taps'.
+[03/12 10:35:06     26s] 
+[03/12 10:35:06     26s] 
+[03/12 10:35:06     26s] @[DEV]innovus 5> 
+
+[03/12 10:35:06     26s] @[DEV]innovus 5> exit
+
+[03/12 10:35:42     30s] 
+[03/12 10:35:42     30s] *** Summary of all messages that are not suppressed in this session:
+[03/12 10:35:42     30s] Severity  ID               Count  Summary                                  
+[03/12 10:35:42     30s] WARNING   IMPDF-247           36  Net '%s' specified in Pin '%s' is incons...
+[03/12 10:35:42     30s] *** Memory Usage v#1 (Current mem = 1796.469M, initial mem = 363.508M) ***
+[03/12 10:35:42     30s] WARNING   IMPLF-200          245  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/12 10:35:42     30s] WARNING   IMPLF-201          749  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/12 10:35:42     30s] ERROR     IMPLF-82             1  %s is not on Manufacturing Grid. This is...
+[03/12 10:35:42     30s] ERROR     IMPSE-110            1  File '%s' line %s: %s.                   
+[03/12 10:35:42     30s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[03/12 10:35:42     30s] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/12 10:35:42     30s] WARNING   IMPEXT-2760          4  Layer M%d specified in the cap table is ...
+[03/12 10:35:42     30s] WARNING   IMPEXT-2771          4  Via %s specified in the cap table is ign...
+[03/12 10:35:42     30s] ERROR     IMPSYT-6692          1  Invalid return code while executing '%s'...
+[03/12 10:35:42     30s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[03/12 10:35:42     30s] WARNING   IMPSP-5123           2  Cell %s is not found.                    
+[03/12 10:35:42     30s] WARNING   IMPSP-9003           2  Cell <'%s'>'s may not be a physical ONLY...
+[03/12 10:35:42     30s] ERROR     IMPSP-9092           2  Option %s is required for command '%s'.  
+[03/12 10:35:42     30s] ERROR     IMPSP-9093           2  %s is not found for adding well tap colu...
+[03/12 10:35:42     30s] WARNING   TA-976               1  Path groups asserted by the group_path c...
+[03/12 10:35:42     30s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[03/12 10:35:42     30s] WARNING   TECHLIB-606        986  An inconsistency was found during interp...
+[03/12 10:35:42     30s] WARNING   TECHLIB-715         12  Power_rail '%s' specified in rail_connec...
+[03/12 10:35:42     30s] ERROR     TECHLIB-1197         6  The cell '%s' on line %d is neither a pa...
+[03/12 10:35:42     30s] ERROR     TECHLIB-1198        22  The 'index_%d' is defined but its corres...
+[03/12 10:35:42     30s] WARNING   TECHLIB-9153         1  Duplicate definition for attribute '%s' ...
+[03/12 10:35:42     30s] *** Message Summary: 3005 warning(s), 35 error(s)
+[03/12 10:35:42     30s] 
+[03/12 10:35:42     30s] --- Ending "Innovus" (totcpu=0:00:30.3, real=0:01:24, mem=1796.5M) ---
