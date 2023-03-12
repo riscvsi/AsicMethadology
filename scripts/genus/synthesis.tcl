@@ -50,12 +50,16 @@ set_db / .information_level 7
 
 if {$designName == "scr1_pipe_top"} {
 lappend libFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024_max_1p8V_25C.lib
+lappend libFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lib
+lappend libFiles ../riscvCoreSyntaCore1/ramInputs/uart.lib
 }
 read_libs  $libFiles
 
 
 if {$designName == "scr1_pipe_top"} {
 lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef
+lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/i2c_top.lef
+lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/uart.lef
 }
 read_physical -lef $lefFiles
 
