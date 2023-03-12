@@ -9,7 +9,7 @@ set cornerpad "PADCORNER"
 foreach_in_collection port [get_ports * -filter "direction == in"] {
 ## methadology team should complete it
 	#if size of collection of get_pin 
-	if {[sizeof_collection [get_pins -of [get_nets -of [get_ports $port]]]] > 0} {
+	#if {[sizeof_collection [get_pins -of [get_nets -of [get_ports $port]]]] > 0} {
 	    set pPort [get_object_name $port]
 	    puts "create_inst -name pad_i_[get_object_name $port] -base_cell ${padi}"
 	    create_inst -name pad_i_[get_object_name $port] -base_cell ${padi}
@@ -27,7 +27,7 @@ foreach_in_collection port [get_ports * -filter "direction == in"] {
 	    puts "connected  pad_i_${pPort}/PAD with ${pPort}"
 	    puts "connect_pin -inst pad_i_${pPort} -pin PAD -net $pPort"
 	    connect_pin -inst pad_i_${pPort} -pin PAD -net $pPort
-    }
+    #}
 }
 
 puts "\n\n\n"
@@ -125,7 +125,7 @@ if {$designName == "scr1_pipe_top"} {
 }
 read_physical -lef $lefFiles
 
-read_netlist ../riscvCoreSyntaCore1/src/top/scr1_top_ahb.v
+read_netlist ../riscvCoreSyntaCore1/src/top/scr1_top_netlist.v
 
 init_design
 #create_floorplan -site CoreSite -core_density_size 1 0.7 10 10 10 10
@@ -138,11 +138,17 @@ commit_power_intent -verbose
 check_power_domains -nets_missing_iso
 check_power_domains -nets_missing_shifter
 
-padInsertion
+#padInsertion
 create_io_row -site Corner
 create_io_row -site Pad
 
-create_floorplan -core_margins_by die -site CoreSite -core_density_size 1 0.4 10.0 0.0 0.0 0.0
+#create_floorplan -core_margins_by die -site CoreSite -core_density_size 1 0.4 10.0 0.0 0.0 0.0
+create_floorplan -site CoreSite -core_density_size 0.999488372093 0.129451 20 20 20 20
+#create_floorplan -core_margins_by die -site CoreSite -core_density_size 1 0.4 20.0 20.0 20.0 20.0
+#create_floorplan -site CoreSite -core_density_size 0.999805825243 0.202988 20.0 20.33 20.0 20.33
+add_rings -nets {vdd vss} -type core_rings -follow core -layer {top Metal1 bottom Metal1 left Metal2 right Metal2} -width {top 2 bottom 2 left 2 right 2} -spacing {top 4 bottom 4 left 4 right 4} -offset {top 1 bottom 1 left 1 right 1} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid none
+
+
 
 write_db top.inn
 
