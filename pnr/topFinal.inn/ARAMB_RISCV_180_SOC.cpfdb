@@ -1,0 +1,378 @@
+#IEEE1801 power intent data
+set 1801_ack_explicit_supply {1}
+set 1801_cln_reconnect {3.0}
+set 1801_default_applies_to {2.1}
+set 1801_domain_interface_definition {2.0}
+set 1801_ports_anon_supply {1}
+set 1801_support_wildcard {1}
+set allSNetVoltageSet {1}
+set all_inputfiles {../scripts/genus/block.upf}
+set always_on_libcells ""
+set connectAOBLast {0}
+set current_apply_inst ""
+set current_model ""
+set current_scope {/}
+set debugFilterNoIsoShift {0}
+set debug_pst_powermode {0}
+set default_pd {pd_SOC_TOP}
+set dontExpandPst {1}
+set downShifterNeeded(pd_SOC_TOP,pd_SOC_TOP) {0}
+set etsNoEco {0}
+set exe_version {21.14-e032_1}
+set feedthrough_ports ""
+set gvoltageRange(pd_SOC_TOP,low) {0}
+set gvoltageRange(pd_SOC_TOP,high) {0}
+set handlePowerStateAsPst {1}
+set handle_model_port_map {1}
+set hier_sepc {/}
+set ieee1801Committed {31}
+set ieee1801Loaded {1}
+set implicitUPFRules(num) {0}
+set internal_domains ""
+set internal_pgnet ""
+set is_analog_ports ""
+set is_isolated_ports ""
+set isoLSNeededInitialized {1}
+set isolationNeeded(pd_SOC_TOP,pd_SOC_TOP) {0}
+set keepGNC {0}
+set lib_lpcells(level_shifter) ""
+set lib_lpcells(retention) ""
+set lib_lpcells(always_on) ""
+set lib_lpcells(isolation) ""
+set lib_lpcells(power_switch) ""
+set lineno {18}
+set lint_error {0}
+set lint_scope {/}
+set noExpandPst {0}
+set normalizePstSupply {0}
+set num_always_on_cell {0}
+set num_apply_model {0}
+set num_associate_ss {0}
+set num_design_attr {0}
+set num_diode_clamp_cell {0}
+set num_eq_supply {0}
+set num_isolation_cell {0}
+set num_level_shifter_cell {0}
+set num_port_attr {0}
+set num_power_domain {1}
+set num_power_switch_cell {0}
+set num_related_supplynet {0}
+set num_related_supplypin {0}
+set num_retention_cell {0}
+set num_suppnet_conn {2}
+set num_suppset_conn {0}
+set pd_intnets(pd_SOC_TOP,ground) {vss}
+set pd_intnets(pd_SOC_TOP,power) {vdd}
+set pd_list {pd_SOC_TOP}
+set pd_pgconn(pd_SOC_TOP,ground) { (vss:VSS)}
+set pd_pgconn(pd_SOC_TOP,power) { (vdd:VDD)}
+set pgvWithoutCSN {0}
+set port_state(vdd,-state) {{active_state 1} {off_state off}}
+set port_state(vdd,port_name) {vdd}
+set port_state(vdd,-line) {../scripts/genus/block.upf:14}
+set power_domain(pd_SOC_TOP,-include_scope) ""
+set power_domain(0) {pd_SOC_TOP}
+set power_domain(pd_SOC_TOP,supply_net) {vss vdd}
+set power_domain(pd_SOC_TOP,-primary_power_net) {vdd}
+set power_domain(pd_SOC_TOP,all_libset) {fast slow}
+set power_domain(pd_SOC_TOP,domain_name) {pd_SOC_TOP}
+set power_domain(pd_SOC_TOP,-line) {../scripts/genus/block.upf:1}
+set power_domain(pd_SOC_TOP,supply_port) {vss vdd}
+set power_domain(pd_SOC_TOP,-primary_ground_net) {vss}
+set power_domain(pd_SOC_TOP,default) {1}
+set power_model_ignore_list {add_port_state add_pst_state create_pst}
+set pst(pstSoc,table_name) {pstSoc}
+set pst(pstSoc,states) {state1}
+set pst(pstSoc,-line) {../scripts/genus/block.upf:16}
+set pst(pstSoc,-supplies) {vdd}
+set pst(pstSoc,state1) {active_state}
+set resolved_pst_num_states {0}
+set scope_error {0}
+set scope_list { / }
+set singlePD {1}
+set skip_commit_iso_shifter {0}
+set sorted_iso_rules ""
+set sorted_ls_rules ""
+set sorted_ret_rules ""
+set source_quiet {0}
+set ss_deref(pd_SOC_TOP.primary) {pd_SOC_TOP_primary_ss_}
+set ss_handle(pd_SOC_TOP.primary) {pd_SOC_TOP_primary_ss_}
+set startCpuTime {20.670000}
+set startRealTime {43.000000}
+set supply_net(vss,-domain) {pd_SOC_TOP}
+set supply_net(vdd,net_name) {vdd}
+set supply_net(vss,net_name) {vss}
+set supply_net(vdd,-domain) {pd_SOC_TOP}
+set supply_port(vdd,hiConn) {vdd}
+set supply_port(vss,loConn) {vss}
+set supply_port(vss,port_name) {vss}
+set supply_port(vss,-domain) {pd_SOC_TOP}
+set supply_port(vdd,supply_net) {vdd}
+set supply_port(vss,hiConn) {vss}
+set supply_port(vdd,-direction) {in}
+set supply_port(vdd,loConn) {vdd}
+set supply_port(vss,supply_net) {vss}
+set supply_port(vss,-direction) {in}
+set supply_port(vdd,port_name) {vdd}
+set supply_port(vdd,-domain) {pd_SOC_TOP}
+set supply_set(pd_SOC_TOP_primary_ss_,-function) {{power vdd} {ground vss}}
+set supply_set(pd_SOC_TOP_primary_ss_,set_name) {pd_SOC_TOP_primary_ss_}
+set supply_set(pd_SOC_TOP_primary_ss_,internal) {1}
+set supplynet_conn(1,net_name) {vdd}
+set supplynet_conn(0,-ports) {vss}
+set supplynet_conn(1,-ports) {vdd}
+set supplynet_conn(0,net_name) {vss}
+set supplynet_domain(pd_SOC_TOP,-primary_power_net) {vdd}
+set supplynet_domain(pd_SOC_TOP,-primary_ground_net) {vss}
+set supported_modelattrs {is_analog is_isolated unconnected feedthrough clamp_value}
+set supported_portattrs {related_power_port related_ground_port driver_supply receiver_supply attribute is_analog is_isolated feedthrough unconnected clamp_value}
+set unconnected_ports ""
+set upShifterNeeded(pd_SOC_TOP,pd_SOC_TOP) {0}
+set upfVersion {2.0}
+set upf_debug {1}
+set upf_errmsg ""
+set upf_file {../scripts/genus/block.upf}
+set upf_inputfiles {../scripts/genus/block.upf}
+set upf_lpcells(level_shifter) ""
+set upf_lpcells(retention) ""
+set upf_lpcells(always_on) ""
+set upf_lpcells(diode_clamp) ""
+set upf_lpcells(isolation) ""
+set upf_lpcells(power_switch) ""
+set upf_reinit {1}
+set useTriVoltValue {1}
+set user_pif_version ""
+set verifyUpfNoIsoShift {0}
+set verifyUpfThroughFeedthru {1}
+set voltageRange(pd_SOC_TOP,low) {0.00}
+set voltageRange(pd_SOC_TOP,high) {0.00}
+::MSV::setSNetVoltageForView vdd func_fast_min 1.08
+::MSV::setSNetVoltageForView vdd func_slow_max 1.08
+::MSV::setSNetVoltageForView vss func_fast_min 0
+::MSV::setSNetVoltageForView vss func_slow_max 0
+if {$::rdagVersionName >= 16.12 || ($::rdagVersionName >= 15.25 && $::rdagVersionName < 16.0)} {
+}
+set ::MSV_UPF::allSNetVoltageSet 1
+
+
+namespace eval ::pd_physical_data {
+set pd_data {
+POWERDOMAIN: NAME=pd_SOC_TOP 
+	PRIM_POWER=vdd PRIM_GND=vss LAYER=0 ISDEFAULT=1 EEQID=0 
+	ROWFLIP=3 SITE=CoreSite ROWSPACETYPE=2 ROWSPACING=0.0000 
+	MODULE=* POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=groundpad4 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=groundpad3 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=groundpad2 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=groundpad1 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=powerpad4 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=powerpad3 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=powerpad2 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=powerpad1 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=corner4 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=corner3 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=corner2 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=corner1 POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[3] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[4] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[5] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[6] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[7] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[8] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[9] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[10] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[11] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[12] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[13] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[14] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[15] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[16] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[17] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[18] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[19] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[20] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[21] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[22] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[23] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[24] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[25] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[26] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[27] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[28] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[29] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[30] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwdata[31] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hwrite POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[3] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[4] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[5] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[6] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[7] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[8] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[9] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[10] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[11] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[12] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[13] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[14] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[15] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[16] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[17] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[18] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[19] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[20] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[21] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[22] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[23] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[24] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[25] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[26] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[27] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[28] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[29] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[30] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_haddr[31] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hmastlock POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_htrans[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_htrans[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hsize[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hsize[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hsize[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hburst[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hburst[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hburst[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hprot[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hprot[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hprot[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_dmem_hprot[3] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[3] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[4] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[5] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[6] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[7] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[8] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[9] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[10] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[11] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[12] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[13] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[14] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[15] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[16] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[17] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[18] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[19] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[20] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[21] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[22] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[23] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[24] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[25] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[26] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[27] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[28] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[29] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[30] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_haddr[31] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hmastlock POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_htrans[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_htrans[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hsize[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hsize[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hsize[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hburst[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hburst[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hburst[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hprot[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hprot[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hprot[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_imem_hprot[3] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_soft_irq POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_o_ext_irq POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hresp POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[3] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[4] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[5] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[6] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[7] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[8] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[9] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[10] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[11] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[12] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[13] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[14] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[15] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[16] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[17] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[18] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[19] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[20] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[21] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[22] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[23] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[24] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[25] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[26] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[27] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[28] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[29] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[30] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hrdata[31] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_dmem_hready POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hresp POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[0] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[1] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[2] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[3] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[4] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[5] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[6] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[7] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[8] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[9] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[10] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[11] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[12] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[13] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[14] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[15] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[16] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[17] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[18] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[19] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[20] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[21] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[22] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[23] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[24] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[25] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[26] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[27] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[28] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[29] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[30] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hrdata[31] POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_imem_hready POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_rtc_clk POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_clk POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_test_rst_n POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_test_mode POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_cpu_rst_n POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_rst_n POWER=(vdd:VDD) GND=(vss:VSS) 
+	PAD=pad_i_pwrup_rst_n POWER=(vdd:VDD) GND=(vss:VSS) 
+END_PD
+}
+}

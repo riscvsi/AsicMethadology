@@ -1,0 +1,8 @@
++-----------------------------------------------------------------------------+
+| Logfile        : ##May-20-02:26:12#.scc322226                               |
+| Job id         : 4371506335637448           Class: (SLES12SP5&&CPUMhz>3199&&128G&&1C) && (!HIGHMEM) Qslot: /CHG/MeteorLake|
+| Executed on    : scc322226                  Pool : zsc3_nb2_ppm             |
+| Queueing time  : Sat May 20 02:26:09 2023                                   |
+| Starting time  : Sat May 20 02:26:12 2023          Qwait:   0h:00m:03s      |
+| Command        : xterm -T asicTest                                          |
++-----------------------------------------------------------------------------+

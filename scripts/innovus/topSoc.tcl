@@ -122,6 +122,7 @@ read_mmmc ../scripts/innovus/mmmc45Soc.tcl
 
 if {$designName == "scr1_pipe_top"} {
     lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/sram_32_1024.lef
+    lappend lefFiles ../riscvCoreSyntaCore1/ramInputs/Analog.lef
 }
 read_physical -lef $lefFiles
 
